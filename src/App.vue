@@ -13,8 +13,7 @@ import MainHeader from '@/components/MainHeader.vue'
     <router-view />
   </main>
   <footer>
-    <top-header />
-  <main-header />
+   
   </footer>
 </template>
 
