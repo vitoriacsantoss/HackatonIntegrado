@@ -14,7 +14,7 @@
 
 <style scoped>
 .main-header {
-        padding: 10px 10px 50px 100px;
+        padding: 10px 10px 5px 7px;
         background-color: bisque;
         display: flex;
     }
