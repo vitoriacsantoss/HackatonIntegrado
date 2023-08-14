@@ -11,13 +11,7 @@ import MButton from '@/components/MButton.vue'
            </li>  
            <li class="nav">
             <m-button texto="Buscar Imoveís" @click="$router.push({ name: 'buscar' })" />
-           </li>  
-           <li class="nav">
-            <m-button texto="A Empresa" @click="$router.push({ name: 'empresa' })" />
-           </li>  
-           <li class="nav">
-            <m-button texto="Anuncie seu imóvel aqui" @click="$router.push({ name: 'anuncie' })" />
-           </li>  
+           </li>    
            <li class="nav">
             <m-button texto="Fale conosco" @click="$router.push({ name: 'contato' })" />
            </li>  

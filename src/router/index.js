@@ -5,8 +5,6 @@ import TerrenoView from '@/views/TerrenoView.vue'
 import ApartamentoView from '@/views/ApartamentoView.vue'
 import CasaView from '@/views/CasaView.vue'
 import BuscarView from '@/views/BuscarView.vue'
-import EmpresaView from '@/views/EmpresaView.vue'
-import AnuncieView from '@/views/AnuncieView.vue'
 import ContatoView from '@/views/ContatoView.vue'
 
 const router = createRouter({
@@ -36,16 +34,6 @@ const router = createRouter({
             path: '/buscar',
             name: 'buscar',
             component: BuscarView
-        },
-        {
-            path: '/empresa',
-            name: 'empresa',
-            component: EmpresaView
-        },
-        {
-            path: '/anuncie',
-            name: 'anuncie',
-            component: AnuncieView
         },
         {
             path: '/contato',

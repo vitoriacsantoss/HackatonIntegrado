@@ -7,6 +7,7 @@ import MainFooter from './components/MainFooter.vue'
 </script>
 
 <template>
+  <div class="tudo">
   <header>
     <top-header />
     <main-header />
@@ -18,8 +19,12 @@ import MainFooter from './components/MainFooter.vue'
     <top-footer />
     <main-footer />
   </footer>
+</div>
 </template>
 
 <style scoped>
-
+  .tudo{
+    font-family:Arial, Helvetica, sans-serif;
+  }
 </style>
+
