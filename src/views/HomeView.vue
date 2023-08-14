@@ -4,14 +4,13 @@ import DestaqueView from '@/components/DestaqueView.vue'
 </script>
 
 <template>
-  <carousel :items-to-show="1.5">
-    <slide v-for="slide in 3" :key="slide">
+  <carousel ref="carousel" v-model="currentSlide">
+    <slide v-for="slide in 1" :key="slide">
       <div class="carousel__item"></div>
     </slide>
 
     <template #addons>
-      <navigation />
-      <pagination />
+     
     </template>
   </carousel>
   <div class="destaques">
@@ -22,16 +21,20 @@ import DestaqueView from '@/components/DestaqueView.vue'
 .destaques {
   margin-top: 100px;
 }
+
 .carousel__item {
-  height: 750px;
+  height: 760px;
   width: 750%;
-  background-image: url('https://static1.purebreak.com.br/articles/5/85/10/5/@/317506--bob-esponja-calca-quadrada-e-as-maiore-opengraph_1200-2.jpg');
   color: var(--vc-clr-white);
   font-size: 20px;
-  border-radius: 8px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('https://www.rafaelfonsecaimoveis.com.br/assets/img/banner-1.jpg');
+     padding-top: 200px;
+     padding-bottom: 200px;
+     background-size: cover;
 }
 
 .carousel__slide {

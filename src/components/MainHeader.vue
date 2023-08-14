@@ -1,21 +1,41 @@
+<script setup>
+import MButton from '@/components/MButton.vue'
+</script>
 <template>
     <div class="main-header">
-        <div>
+        <div class="nav">
             LOGO
         </div>
-        <ul class="nav navbar-nav">
-           <li>ITEM 1</li>  
-           <li>ITEM 2</li>  
-           <li>ITEM 3</li>  
-           <li>ITEM 3</li>  
-        </ul>
+           <li class="nav">
+            <m-button texto="Home" @click="$router.push({ name: 'home' })" />
+           </li>  
+           <li class="nav">
+            <m-button texto="Buscar Imoveís" @click="$router.push({ name: 'buscar' })" />
+           </li>  
+           <li class="nav">
+            <m-button texto="A Empresa" @click="$router.push({ name: 'empresa' })" />
+           </li>  
+           <li class="nav">
+            <m-button texto="Anuncie seu imóvel aqui" @click="$router.push({ name: 'terreno' })" />
+           </li>  
+           <li class="nav">
+            <m-button texto="Terreno" @click="$router.push({ name: 'terreno' })" />
+           </li>  
+
+
     </div>
 </template>
 
 <style scoped>
 .main-header {
-        padding: 10px 10px 5px 7px;
-        background-color: bisque;
-        display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    margin: auto
+    }
+    .nav{
+    margin-top: 20px;
+    padding: 20px 35px 20px 35px
     }
 </style>

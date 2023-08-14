@@ -25,6 +25,8 @@
         padding: 10px 10px 500px 200px;
         background-color: #02193c;
         display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     
     .top-footer div {
