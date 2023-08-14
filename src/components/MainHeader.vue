@@ -16,10 +16,10 @@ import MButton from '@/components/MButton.vue'
             <m-button texto="A Empresa" @click="$router.push({ name: 'empresa' })" />
            </li>  
            <li class="nav">
-            <m-button texto="Anuncie seu imóvel aqui" @click="$router.push({ name: 'terreno' })" />
+            <m-button texto="Anuncie seu imóvel aqui" @click="$router.push({ name: 'anuncie' })" />
            </li>  
            <li class="nav">
-            <m-button texto="Terreno" @click="$router.push({ name: 'terreno' })" />
+            <m-button texto="Fale conosco" @click="$router.push({ name: 'contato' })" />
            </li>  
 
 

@@ -7,7 +7,7 @@ import CasaView from '@/views/CasaView.vue'
 import BuscarView from '@/views/BuscarView.vue'
 import EmpresaView from '@/views/EmpresaView.vue'
 import AnuncieView from '@/views/AnuncieView.vue'
-import ContatoView from '@/views/AnuncieView.vue'
+import ContatoView from '@/views/ContatoView.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -47,6 +47,12 @@ const router = createRouter({
             name: 'anuncie',
             component: AnuncieView
         },
+        {
+            path: '/contato',
+            name: 'contato',
+            component: ContatoView
+        },
+
 
     ]
 }) 
