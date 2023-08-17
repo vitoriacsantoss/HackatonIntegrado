@@ -1,9 +1,5 @@
 <script setup>
-
-
 import { ref, computed } from 'vue'
-
-
 
 
 const nome = ref('')
@@ -79,27 +75,30 @@ const mensagemErro = computed(() => {
                     <form class="form" @submit.prevent="ok = validar()">
                         <div class="centro">
                             <div class="dados">
+                                <div class="nome">
                                 <input type="text" v-on:keypress="ok = false" v-model="nome" required
                                     placeholder="Digite seu nome" />
-                                <hr>
-                                <div></div>
-                                <input type="email" v-on:keypress="ok = false" v-model="email"
-                                    placeholder="Digite seu email" />
-                                <hr>
-                                <div>
-                                <input type="password" v-on:keypress="ok = false" v-model="senha" minlength="6"
-                                    placeholder="Digite sua senha" />
                                 </div>
                                 <hr>
-                                <div>
-                                <input type="password" v-on:keypress="ok = false" v-model="confirma" minlength="6"
-                                    placeholder="Digite sua senha novamente" />
-                                <p class="paga">{{ mensagemErro }}</p>
+                                <div class="email">
+                                <input type="email" v-on:keypress="ok = false" v-model="email"
+                                    placeholder="Digite seu email" />
+                                </div>
+                                <hr>
+                                <div class="telefoneCL">
+                                    <input type="password" v-on:keypress="ok = false" v-model="senha" minlength="6"
+                                        placeholder="Digite seu tele" />
+                                </div>
+                                <hr>
+                                <div class="telefoneFX">
+                                    <input type="password" v-on:keypress="ok = false" v-model="confirma" minlength="6"
+                                        placeholder="Digite sua senha novamente" />
+                                    <p class="paga">{{ mensagemErro }}</p>
                                 </div>
                                 <hr>
                                 <input type="text" v-on:keypress="ok = false" v-model="obs" style="padding: 30px;"
                                     placeholder="Digite uma obs sobre a loja..." />
-                                
+                                 <br>
                                 <button class="comp" type="submit">Enviar</button>
                             </div>
                         </div>
@@ -111,6 +110,19 @@ const mensagemErro = computed(() => {
 </template>
 
 <style scoped>
+
+.nome{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.email{
+    margin-top: -6%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 h2 {
     font-size: 25px;
 }
