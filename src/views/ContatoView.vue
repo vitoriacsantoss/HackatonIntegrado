@@ -75,36 +75,33 @@ const mensagemErro = computed(() => {
                 </div>
 
                 <!-- contato-formulario -->
-                <div class="container">
+                <div class="container-form">
                     <form class="form" @submit.prevent="ok = validar()">
-                        <div class="centro ">
-
+                        <div class="centro">
                             <div class="dados">
-                                <h2>Dados pessoais:</h2>
-                                <label for="">Nome:</label>
                                 <input type="text" v-on:keypress="ok = false" v-model="nome" required
                                     placeholder="Digite seu nome" />
                                 <hr>
-                                <label for="">Email:</label>
+                                <div></div>
                                 <input type="email" v-on:keypress="ok = false" v-model="email"
                                     placeholder="Digite seu email" />
                                 <hr>
-                                <hr><label for="">Senha:</label>
+                                <div>
                                 <input type="password" v-on:keypress="ok = false" v-model="senha" minlength="6"
                                     placeholder="Digite sua senha" />
+                                </div>
                                 <hr>
-                                <label for="">Confirmar senha:</label>
+                                <div>
                                 <input type="password" v-on:keypress="ok = false" v-model="confirma" minlength="6"
                                     placeholder="Digite sua senha novamente" />
                                 <p class="paga">{{ mensagemErro }}</p>
+                                </div>
                                 <hr>
-                                <h2>Observação sobre o site:</h2>
                                 <input type="text" v-on:keypress="ok = false" v-model="obs" style="padding: 30px;"
                                     placeholder="Digite uma obs sobre a loja..." />
-                                <hr>
+                                
                                 <button class="comp" type="submit">Enviar</button>
                             </div>
-
                         </div>
                     </form>
                 </div>
@@ -114,7 +111,14 @@ const mensagemErro = computed(() => {
 </template>
 
 <style scoped>
-.contact-form {}
+h2 {
+    font-size: 25px;
+}
+
+.container-form {
+    margin-left: 35%;
+    margin-top: -15%;
+}
 
 .row {
     margin-right: -15px;
@@ -133,10 +137,11 @@ const mensagemErro = computed(() => {
 }
 
 .titu3 {
-    padding: 0 0 0 80px;
+    padding: 0 0 0 20px;
 }
 
 .info {
+    margin-left: 8%;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -168,19 +173,19 @@ const mensagemErro = computed(() => {
 .form {
     max-width: 700px;
     padding: 25px;
-    border: 1px solid #ccc;
-    background-color: #848486;
+    /* border: 1px solid #ccc; */
+    /* background-color: #848486; */
     width: 85vh;
     font-family: 'Times New Roman', Times, serif;
     transform: scale(0.8);
-    font-size: 25px;
+    font-size: 22px;
 }
 
 
 
 .dados {
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    /* color: black; */
 }
 
 .img1 {
