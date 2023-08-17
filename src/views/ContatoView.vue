@@ -43,7 +43,7 @@ const mensagemErro = computed(() => {
             <h1 class="CO">
                 CONTATO
             </h1>
-            <h3>Escolha um dos canais para que possamos responder o mais rápido possível.</h3>
+            <h4>Escolha um dos canais para que possamos responder o mais rápido possível.</h4>
         </div>
 
 
@@ -79,25 +79,28 @@ const mensagemErro = computed(() => {
                                 <input type="text" v-on:keypress="ok = false" v-model="nome" required
                                     placeholder="Digite seu nome" />
                                 </div>
-                                <hr>
+                                
                                 <div class="email">
                                 <input type="email" v-on:keypress="ok = false" v-model="email"
                                     placeholder="Digite seu email" />
                                 </div>
-                                <hr>
+                              <br>
+                                <!-- <br>  -->
+                            
                                 <div class="telefoneCL">
                                     <input type="password" v-on:keypress="ok = false" v-model="senha" minlength="6"
-                                        placeholder="Digite seu tele" />
+                                        placeholder="Digite seu telefone" />
                                 </div>
-                                <hr>
+                                <!-- <br> -->
                                 <div class="telefoneFX">
                                     <input type="password" v-on:keypress="ok = false" v-model="confirma" minlength="6"
                                         placeholder="Digite sua senha novamente" />
                                     <p class="paga">{{ mensagemErro }}</p>
                                 </div>
-                                <hr>
-                                <input type="text" v-on:keypress="ok = false" v-model="obs" style="padding: 30px;"
-                                    placeholder="Digite uma obs sobre a loja..." />
+                                <br> 
+                                <input type="text" v-on:keypress="ok = false" v-model="obs" style="padding: 60px;"
+                                    placeholder="Mensagem" />
+                                 <br>
                                  <br>
                                 <button class="comp" type="submit">Enviar</button>
                             </div>
@@ -111,18 +114,44 @@ const mensagemErro = computed(() => {
 
 <style scoped>
 
+
+.comp{ 
+    color: white;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 47%;
+    border: 1px solid#ccc;
+    font-size: 1.5rem;
+    background-color: #f28a31;
+}
+
 .nome{
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    /* margin-bottom: 10%; */
 }
 .email{
-    margin-top: -6%;
+    margin-top: -6%; 
     display: flex;
     flex-direction: column;
     align-items: end;
 }
-
+.telefoneCL{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    /* margin-bottom: 20%; */
+}
+.telefoneFX{
+    margin-top: -6%; 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 h2 {
     font-size: 25px;
 }
