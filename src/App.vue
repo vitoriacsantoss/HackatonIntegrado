@@ -24,7 +24,8 @@ import MainFooter from './components/MainFooter.vue'
 
 <style scoped>
   .tudo{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Open Sans" sans-serif;
+   
   }
 </style>
 
