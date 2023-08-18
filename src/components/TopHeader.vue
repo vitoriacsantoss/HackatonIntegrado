@@ -15,6 +15,7 @@
         <div>
             <img class="img1" src="email.png" alt="">
             contato@contato.com.br
+            
         </div>
     </div>
 </template>

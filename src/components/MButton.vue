@@ -13,18 +13,18 @@ const props = defineProps({
 <style scoped>
 
 button {
-    background-color:  #a0522d;
-    color: aliceblue;
+    background-color:  white;
+    color:#4A4747 ;
     font-size: 1.1rem;
-    border: 1px solid#ccc;
-    border-radius: 5px;
+    border: none;
+    /* border-radius: 5px; */
     padding: 5px 10px;
     cursor: pointer;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Open Sans" sans-serif;
 }
 
 button:hover{
-    background-color: black ;
+    background-color:  #F28A31;
 }
 
 </style>
