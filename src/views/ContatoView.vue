@@ -75,6 +75,7 @@ const mensagemErro = computed(() => {
                     <form class="form" @submit.prevent="ok = validar()">
                         <div class="centro">
                             <div class="dados">
+                                <br>
                                 <div class="nome">
                                 <input type="text" v-on:keypress="ok = false" v-model="nome" required
                                     placeholder="Digite seu nome" />
@@ -85,19 +86,21 @@ const mensagemErro = computed(() => {
                                     placeholder="Digite seu email" />
                                 </div>
                               <br>
+                              
                                 <!-- <br>  -->
                             
                                 <div class="telefoneCL">
-                                    <input type="password" v-on:keypress="ok = false" v-model="senha" minlength="6"
+                                    <input type="password" v-on:keypress="ok = false" v-model="senha" minlength=""
                                         placeholder="Digite seu telefone" />
                                 </div>
+                                
                                 <!-- <br> -->
                                 <div class="telefoneFX">
-                                    <input type="password" v-on:keypress="ok = false" v-model="confirma" minlength="6"
-                                        placeholder="Digite sua senha novamente" />
+                                    <input type="password" v-on:keypress="ok = false" v-model="confirma" minlength=""
+                                        placeholder="Digite seu telefone" />
                                     <p class="paga">{{ mensagemErro }}</p>
                                 </div>
-                                <br> 
+                                
                                 <input type="text" v-on:keypress="ok = false" v-model="obs" style="padding: 60px;"
                                     placeholder="Mensagem" />
                                  <br>
