@@ -1,12 +1,29 @@
 <script setup>
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-import DestaqueView from '@/components/DestaqueView.vue'
+  import DestaqueView from '@/components/DestaqueView.vue'
+  import { ref } from 'vue'
+  const comprar = ref('')
+  const tipos = ref('')
+  
 </script>
 
 <template>
   <div class="banner">
     <div class="carousel__item"></div>
-    <div  class="form"> FORM</div>
+    <div  class="form"> 
+      <div class="opcao">
+      <label for="comprar"></label>
+      <select v-on:keypress="ok = false" v-model="estado" placeholder="Digite sua data">
+        <option value="Comprar">Comprar</option>
+        <option value="Alugar">Alugar</option>
+      </select>
+    </div>
+
+
+
+
+
+
+    </div>
   </div>
   <div class="destaques">
     <destaque-view />
