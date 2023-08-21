@@ -94,9 +94,7 @@ const ok = ref(false)
                     </form>
                 </div>
             </form>
-            <div v-if="ok" class="baixo">
-                <h2> Sua mensagem foi enviada,espere seu retorno !</h2>
-            </div>
+            <div v-if="ok" class="baixo">Sua mensagem foi enviada,espere seu retorno! </div>
         </div>
     </div>
 </template>
@@ -113,11 +111,11 @@ textarea {
     padding-left: 10%;
     flex-direction: row;
     font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     justify-content: center;
     border: 5px;
     display: flex;
-    
+
 }
 
 .comp {
@@ -200,7 +198,7 @@ h2 {
 
 .info {
     margin-left: 8%;
-    margin-top: 50px;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     font-size: 14px;
@@ -237,6 +235,7 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     transform: scale(0.8);
     font-size: 22px;
+    margin-top: 1%;
 }
 
 
@@ -284,4 +283,5 @@ h2 {
     font-size: 25px;
     margin-top: 30px;
     color: #37404D;
-}</style>
+}
+</style>
