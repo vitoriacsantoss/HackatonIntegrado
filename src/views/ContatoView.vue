@@ -80,34 +80,46 @@ const ok = ref(false)
                                     <p class="paga">{{ mensagemErro }}</p>
                                 </div>
 
-                                <div class="mansagem">
-                                    <input v-model="texto" placeholder="mensagem">
+                                <div class="mensagem">
+                                    <textarea v-model="texto" placeholder="mensagem"> </textarea>
                                 </div>
                                 <br>
                                 <br>
                                 <br>
-                                <button class="comp" @click="ok = !ok">Enviar</button>
+
+                                <button class="comp" type="submit" @click="ok = !ok">Enviar</button>
+
                             </div>
                         </div>
                     </form>
                 </div>
             </form>
-            <div v-if="ok" class="centro2">
-                <p> Sua mensagem foi enviada,espere seu retorno </p>
+            <div v-if="ok" class="baixo">
+                <h2> Sua mensagem foi enviada,espere seu retorno !</h2>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
-.centro2{
-    flex-direction: column;
+textarea {
+    resize: none;
+    width: 1000px;
+    height: 400px;
+
+}
+
+.baixo {
+    padding-left: 10%;
+    flex-direction: row;
     font-size: medium;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: center;
-    margin-top: 70px;
     border: 5px;
+    display: flex;
+    
 }
+
 .comp {
     color: white;
     height: 50px;
@@ -119,6 +131,7 @@ const ok = ref(false)
     border: 1px solid#ccc;
     font-size: 1.5rem;
     background-color: #f28a31;
+    margin-top: 20%;
 }
 
 .nome {
@@ -148,11 +161,12 @@ const ok = ref(false)
     flex-direction: column;
     align-items: end;
 }
+
 .mensagem {
-    width: 50px;
-    height: 50px;
+    width: 650px;
+    height: 200px;
     display: flex;
-    align-items: end;
+    /* align-items: end; */
 }
 
 h2 {
@@ -270,5 +284,4 @@ h2 {
     font-size: 25px;
     margin-top: 30px;
     color: #37404D;
-}
-</style>
+}</style>
