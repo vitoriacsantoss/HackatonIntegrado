@@ -31,39 +31,57 @@ const email = ref('')
             </div>
         </div>
         <div class="links">
-
-            <div class="link">
-                <h1>LINKS</h1>
-                <div class="botoes">
-                    <div class="bot">
-                        <button @click="$router.push({ name: 'home' })">Home</button>
-                    </div>
-                    <div class="bot">
-                        <button @click="$router.push({ name: 'buscar' })">Buscar Imóveis</button>
-                    </div>
-                    <div class="bot">
-                        <button @click="$router.push({ name: 'contato' })">Fale conosco</button>
-                    </div>
-                </div>
+            <h1>LINKS</h1>
+            <div class="bot">
+                <button @click="$router.push({ name: 'home' })">Home</button>
+            </div>
+            <div class="bot">
+                <button @click="$router.push({ name: 'buscar' })">Buscar Imóveis</button>
+            </div>
+            <div class="bot">
+                <button @click="$router.push({ name: 'contato' })">Fale conosco</button>
             </div>
         </div>
-
-            <div class="entramos">
-                <h1>ENTRAMOS EM CONTATO</h1>
-                <div class="miniform">
-                    <p class="texto"> Ficou com dúvida de como alugar <br> ou comprar o seu imóvel, <br> entraremos em contato,digite o <br> seu email</p>
-                    <label for="">Email: </label>
-                    <input type="email" class="input" v-on:keypress="ok = false" v-model="email"
-                        placeholder="insira seu email" required />
-                </div>
+        <div class="entramos">
+            <h1>ENTRAMOS EM CONTATO</h1>
+            <div class="miniform">
+                <p>Ficou com dúvida de como alugar</p>
+                <p>ou comprar o seu imóvel,</p>
+                <p>entraremos em contato, digite o seu email</p>
+                <input type="email" class="input" v-on:keypress="ok = false" v-model="email" placeholder="Email..."
+                    required />
+                <p class="pzin">Ao informar meus dados, eu</p>
+                <p>concordo com a Política de Privacidade.</p>
+                <button class="comp">Enviar</button>
             </div>
+        </div>
     </div>
 </template>
 
 <style scoped>
-.texto{
-    font-size: medium;
+.comp {
+    color: white;
+    height: 40px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 47%;
+    border: 1px solid#ccc;
+    background-color: #f28a31;
+    margin-top: 20%;
+    letter-spacing: 1px;
+    justify-content: center;
+    margin-left: 0%;
 }
+.pzin{
+    margin-top: 20px;
+}
+.input {
+    height: 40px;
+    padding: 15px;
+}
+
 .main-footer {
     padding: 10px 10px 500px 100px;
     background-color: #02193c;
@@ -77,23 +95,31 @@ const email = ref('')
     flex-direction: column;
     padding-left: 300px;
 }
-.entramos{
+
+.entramos {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding-left: 10px;
+    padding-left: 250px;
 }
 
-.link {
-    padding-left: 50px ;
-    margin-top: 0%;
+.miniform {
+    background-color: #021830;
+    width: 300px;
+    height: 350px;
+    padding: 15px;
+}
+
+.links {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px, 10px, 20px, 60px;
+    padding-left: 15%;
 }
 
 .bot {
-    padding-top: 10%;
     background-color: #02193c;
-    color: #ffffff;
-    border: 1px solid #02193c;
 }
 
 .img1 {
@@ -119,5 +145,6 @@ img {
 h1 {
     font-size: medium;
     color: white;
-}
-</style>
+    margin-top: 80px;
+    margin-bottom: 30px;
+}</style>
