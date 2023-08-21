@@ -12,17 +12,20 @@
     <div  class="form"> 
       <div class="opcao">
       <label for="comprar"></label>
-      <select v-on:keypress="ok = false" v-model="estado" placeholder="Digite sua data">
+      <select class="comprar" v-on:keypress="ok = false" v-model="estado" placeholder="Digite sua data">
         <option value="Comprar">Comprar</option>
         <option value="Alugar">Alugar</option>
       </select>
     </div>
-
-
-
-
-
-
+      <div class="opcao2"><label for="comprar"></label>
+      <select v-on:keypress="ok = false" v-model="estado" placeholder="Digite sua data">
+        <option value="ap">Apartamento</option>
+        <option value="cs">Casa</option>
+        <option value="trr">Terreno</option>
+      </select>
+    </div>
+    <button @click="$router.push({ name: 'buscar' })">BUSCAR</button>
+     
     </div>
   </div>
   <div class="destaques">
@@ -30,6 +33,17 @@
   </div>
 </template>
 <style scoped>
+.form{
+  display: flex;
+  align-items: center;
+}
+.comprar{
+   /* height: 50px;
+   width: 150px; */
+}
+.opcao{
+  /* padding: 50px 50px 50px 50px; */
+}
 
 .banner {
   display: flex;
