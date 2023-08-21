@@ -4,31 +4,10 @@ import { ref, computed } from 'vue'
 
 const nome = ref('')
 const email = ref('')
-const senha = ref('')
+const celular = ref('')
 const obs = ref('')
-const confirma = ref('')
+const telefone = ref('')
 const ok = ref(false)
-
-
-
-
-function validar() {
-    if (senha.value === confirma.value) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-const mensagemErro = computed(() => {
-    if (senha.value != confirma.value) {
-        return 'As senhas devem ser iguais!'
-    } else {
-        return ''
-    }
-})
-
-
 
 
 </script>
@@ -77,48 +56,59 @@ const mensagemErro = computed(() => {
                             <div class="dados">
                                 <br>
                                 <div class="nome">
-                                <input type="text" v-on:keypress="ok = false" v-model="nome" required
-                                    placeholder="Digite seu nome" />
+                                    <input type="text" v-on:keypress="ok = false" v-model="nome" required
+                                        placeholder="Digite seu nome" />
                                 </div>
-                                
+
                                 <div class="email">
-                                <input type="email" v-on:keypress="ok = false" v-model="email"
-                                    placeholder="Digite seu email" />
+                                    <input type="email" v-on:keypress="ok = false" v-model="email"
+                                        placeholder="Digite seu email" />
                                 </div>
-                              <br>
-                              
+                                <br>
+
                                 <!-- <br>  -->
-                            
+
                                 <div class="telefoneCL">
-                                    <input type="password" v-on:keypress="ok = false" v-model="senha" minlength=""
+                                    <input type="telefoneCL" v-on:keypress="ok = false" v-model="celular" minlength=""
                                         placeholder="Digite seu telefone" />
                                 </div>
-                                
+
                                 <!-- <br> -->
                                 <div class="telefoneFX">
-                                    <input type="password" v-on:keypress="ok = false" v-model="confirma" minlength=""
+                                    <input type="telefoneFX" v-on:keypress="ok = false" v-model="telefone" minlength=""
                                         placeholder="Digite seu telefone" />
                                     <p class="paga">{{ mensagemErro }}</p>
                                 </div>
-                                
-                                <input type="text" v-on:keypress="ok = false" v-model="obs" style="padding: 60px;"
-                                    placeholder="Mensagem" />
-                                 <br>
-                                 <br>
-                                <button class="comp" type="submit">Enviar</button>
+
+                                <div class="mansagem">
+                                    <input v-model="texto" placeholder="mensagem">
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <button class="comp" @click="ok = !ok">Enviar</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </form>
+            <div v-if="ok" class="centro2">
+                <p> Sua mensagem foi enviada,espere seu retorno </p>
+            </div>
         </div>
     </div>
 </template>
 
 <style scoped>
-
-
-.comp{ 
+.centro2{
+    flex-direction: column;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    margin-top: 70px;
+    border: 5px;
+}
+.comp {
     color: white;
     height: 50px;
     width: 100px;
@@ -131,30 +121,40 @@ const mensagemErro = computed(() => {
     background-color: #f28a31;
 }
 
-.nome{
+.nome {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     /* margin-bottom: 10%; */
 }
-.email{
-    margin-top: -6%; 
+
+.email {
+    margin-top: -6%;
     display: flex;
     flex-direction: column;
     align-items: end;
 }
-.telefoneCL{
+
+.telefoneCL {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     /* margin-bottom: 20%; */
 }
-.telefoneFX{
-    margin-top: -6%; 
+
+.telefoneFX {
+    margin-top: -6%;
     display: flex;
     flex-direction: column;
     align-items: end;
 }
+.mensagem {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: end;
+}
+
 h2 {
     font-size: 25px;
 }
