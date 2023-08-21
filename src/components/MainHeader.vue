@@ -3,6 +3,9 @@ import MButton from '@/components/MButton.vue'
 </script>
 <template>
     <div class="main-header">
+        <div>
+            <img class="logo" src="logo2.png" alt="">
+        </div>
            <li class="nav">
             <m-button texto="Home" @click="$router.push({ name: 'home' })" />
            </li>  
@@ -18,8 +21,9 @@ import MButton from '@/components/MButton.vue'
 
 <style scoped>
 .logo {
-    height: 100px;
-    width: 120px;
+    /* margin-left: -15%; */
+    height: 125px;
+    width: 150px;
 }
 
 .main-header {

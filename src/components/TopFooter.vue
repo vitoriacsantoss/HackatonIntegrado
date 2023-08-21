@@ -39,8 +39,8 @@ button:hover {
 
 .logo {
     margin-top: 15%;
-    height: 100px;
-    width: 120px;
+    height: 125px;
+    width: 150px;
 }
 
 .footer-cima {

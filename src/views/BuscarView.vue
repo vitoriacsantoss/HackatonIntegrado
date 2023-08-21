@@ -4,6 +4,9 @@
             <h1>BUSCAR ÍMOVEIS</h1>
         </div>
     </div>
+    <div class="container">
+        
+    </div>
 </template>
 <style scoped>
 
