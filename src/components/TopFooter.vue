@@ -6,7 +6,6 @@
         <div>
             <img class="logo" src="logo2.png" alt="">
         </div>
-
         <div>
             <p class="item">QUERENDO REALIZAR SEU SONHO?</p>
         </div>
@@ -17,28 +16,31 @@
 </template>
 
 <style scoped>
-button{
+button {
     background-color: #f28a31;
     color: #ffffff;
-    border: 1px solid #f28a31;
-
+    padding: 20px;
+    border: 2px solid #ffffff;
+    transition: background-color 1s ease, color 1s ease;
 }
-button:hover{
+
+button:hover {
     background-color: #ffffff;
     color: black;
 }
+
 .item {
     font-size: 30px;
     color: #ffffff;
     font-family: "Open Sans" sans-serif;
     font-weight: 200;
- 
+
 }
 
 .logo {
     margin-top: 15%;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 120px;
 }
 
 .footer-cima {

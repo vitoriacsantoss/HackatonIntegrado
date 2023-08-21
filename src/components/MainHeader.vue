@@ -3,9 +3,6 @@ import MButton from '@/components/MButton.vue'
 </script>
 <template>
     <div class="main-header">
-        <div class="nav">
-            LOGO
-        </div>
            <li class="nav">
             <m-button texto="Home" @click="$router.push({ name: 'home' })" />
            </li>  
@@ -16,17 +13,21 @@ import MButton from '@/components/MButton.vue'
             <m-button texto="Fale conosco" @click="$router.push({ name: 'contato' })" />
            </li>  
 
-
     </div>
 </template>
 
 <style scoped>
+.logo {
+    height: 100px;
+    width: 120px;
+}
+
 .main-header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 60%;
-    margin: auto
+    /* margin: auto */
     }
     .nav{
     margin-top: 20px;
