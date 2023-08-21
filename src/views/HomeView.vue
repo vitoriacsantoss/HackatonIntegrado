@@ -4,27 +4,37 @@ import DestaqueView from '@/components/DestaqueView.vue'
 </script>
 
 <template>
-  <carousel ref="carousel" v-model="currentSlide">
-    <slide v-for="slide in 1" :key="slide">
-      <div class="carousel__item"></div>
-    </slide>
-
-    <template #addons>
-     
-    </template>
-  </carousel>
+  <div class="banner">
+    <div class="carousel__item"></div>
+    <div  class="form"> FORM</div>
+  </div>
   <div class="destaques">
     <destaque-view />
   </div>
 </template>
 <style scoped>
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .destaques {
   margin-top: 100px;
 }
 
+.form {
+  height: 380px;
+  width: 650px;
+  background-color:  #03033d80;
+  position: absolute;
+  border-top: 7px solid #f28a31;
+}
+
 .carousel__item {
   height: 760px;
-  width: 750%;
+  width: 100%;
   color: var(--vc-clr-white);
   font-size: 20px;
 
@@ -32,9 +42,9 @@ import DestaqueView from '@/components/DestaqueView.vue'
   justify-content: center;
   align-items: center;
   background-image: url('https://www.rafaelfonsecaimoveis.com.br/assets/img/banner-1.jpg');
-     padding-top: 200px;
-     padding-bottom: 200px;
-     background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: cover;  
 }
 
 .carousel__slide {
