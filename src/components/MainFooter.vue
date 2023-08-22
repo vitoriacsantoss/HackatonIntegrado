@@ -32,15 +32,16 @@ const email = ref('')
         </div>
         <div class="links">
             <h1>LINKS</h1>
-            <div class="bot">
-                <button @click="$router.push({ name: 'home' })">Home</button>
+           <div>
+            <router-link to="/" class="routerHome">Home</router-link>
             </div>
-            <div class="bot">
-                <button @click="$router.push({ name: 'buscar' })">Buscar Imóveis</button>
+            <div>
+            <router-link to="/buscar" class="routerBusca">Buscar imóveis</router-link>
             </div>
-            <div class="bot">
-                <button @click="$router.push({ name: 'contato' })">Fale conosco</button>
-            </div>
+            <div>
+            <router-link to="/contato" class="routerFale">Fale conosco</router-link>
+        </div>
+
         </div>
         <div class="entramos">
             <h1>ENTRAMOS EM CONTATO</h1>
@@ -59,6 +60,19 @@ const email = ref('')
 </template>
 
 <style scoped>
+.routerBusca{
+text-decoration: none;
+color: #AAAAAA;
+}
+.routerHome{
+text-decoration: none;
+color: #AAAAAA;
+}
+.routerFale{
+text-decoration: none;
+color: #AAAAAA;
+}
+
 .comp {
     color: white;
     height: 40px;
