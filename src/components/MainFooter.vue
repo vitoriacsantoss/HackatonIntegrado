@@ -6,71 +6,148 @@ import ContatoView from '@/views/ContatoView.vue'
 import { ref, computed } from 'vue'
 
 const email = ref('')
+let enviar = ref(false)
+
+function confirmacao() {
+    console.log(enviar)
+    email.value = ""
+    return true;
+}
 
 </script>
 <template>
     <div class="main-footer">
         <div class="contato">
             <h1>CONTATO</h1>
-            <div>
 
-                CRECI 12345
-            </div>
-            <div>
-                <img class="img1" src="telefone.png" alt="">
-                (47) 1234-1234
-            </div>
-            <div>
-                <img class="img" src="https://cdn.icon-icons.com/icons2/792/PNG/512/whatsapp_icon-icons.com_65542.png"
-                    alt="">
-                (47) 91234-1234
-            </div>
-            <div>
-                <img class="img1" src="email.png" alt="">
-                contato@contato.com.br
+            <div class="contact-form">
+                    <div class="info">
+                        
+                        <div>
+                            <img class="img1" src="localiz.png" alt="">
+                            Av Do Principe, 1186, Itapema do Norte - Itapoá /SC
+                        </div>
+                        <div>
+                            <img class="img1" src="email.png" alt="">
+                            rfconsultoriaimobiliaria@outlook.com.br
+                        </div>
+                        <div>
+                            <img class="img1" src="telefone.png" alt="">
+                            (47) 3443-3178
+                        </div>
+                        <div>
+                            <img class="img"
+                                src="https://cdn.icon-icons.com/icons2/792/PNG/512/whatsapp_icon-icons.com_65542.png"
+                                alt="">
+                            (47) 99684-3087
+                        </div>
+                    </div>
             </div>
         </div>
         <div class="links">
             <h1>LINKS</h1>
-           <div>
-            <router-link to="/" class="routerHome">Home</router-link>
+            <div>
+                <router-link to="/" class="routerHome">Home</router-link>
             </div>
             <div>
-            <router-link to="/buscar" class="routerBusca">Buscar imóveis</router-link>
+                <router-link to="/contato" class="routerFale">Fale conosco</router-link>
             </div>
             <div>
-            <router-link to="/contato" class="routerFale">Fale conosco</router-link>
-        </div>
-
+                <router-link to="/buscar" class="routerBusca">Buscar imóveis</router-link>
+            </div>
+          
         </div>
         <div class="entramos">
             <h1>ENTRAMOS EM CONTATO</h1>
-            <div class="miniform">
+             <form  class="miniform" @submit.prevent="enviar = confirmacao()">
                 <p>Ficou com dúvida de como alugar</p>
                 <p>ou comprar o seu imóvel,</p>
                 <p>entraremos em contato, digite o seu email</p>
-                <input type="email" class="input" v-on:keypress="ok = false" v-model="email" placeholder="Email..."
-                    required />
+                <div class="email">
+                    <input type="email" v-model="email" v-on:keypress="enviar = false" required placeholder="Email..." />
+                </div>
                 <p class="pzin">Ao informar meus dados, eu</p>
                 <p>concordo com a Política de Privacidade.</p>
-                <button class="comp">Enviar</button>
+
+             <button type="submit" class="comp">Enviar</button>
+            </form>
             </div>
+
         </div>
-    </div>
+    
+
+
 </template>
 
 <style scoped>
-.routerBusca{
-text-decoration: none;
-color: #AAAAAA;
+
+
+.info {
+    margin-left: 8%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 0 0 0 70px;
+    list-style: none;
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 22px;
+    color: #535353;
 }
-.routerHome{
-text-decoration: none;
-color: #AAAAAA;
+.img1 {
+    margin-top: 10px;
 }
-.routerFale{
-text-decoration: none;
-color: #AAAAAA;
+.comp {
+    color: white;
+    height: 10px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 47%;
+    border: 1px solid#ccc;
+    font-size: 1.5rem;
+    background-color: #f28a31;
+    margin-top: 20%;
+}
+
+.email {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 90px;
+    width: 50px;
+    padding: 15px;
+    margin-left: 47%;
+    margin-top: 20%;
+margin-bottom: 15px;
+
+
+}
+
+.baixo {
+    padding-left: 10%;
+    flex-direction: row;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: center;
+    border: 5px;
+    display: flex;
+}
+
+.routerBusca {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+.routerHome {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+.routerFale {
+    text-decoration: none;
+    color: #AAAAAA;
 }
 
 .comp {
@@ -88,9 +165,11 @@ color: #AAAAAA;
     justify-content: center;
     margin-left: 0%;
 }
-.pzin{
+
+.pzin {
     margin-top: 20px;
 }
+
 .input {
     height: 40px;
     padding: 15px;
@@ -136,9 +215,6 @@ color: #AAAAAA;
     background-color: #02193c;
 }
 
-.img1 {
-    margin-top: 10px;
-}
 
 .main-footer div {
     color: #AAAAAA;
@@ -161,4 +237,5 @@ h1 {
     color: white;
     margin-top: 80px;
     margin-bottom: 30px;
-}</style>
+}
+</style>

@@ -19,13 +19,6 @@ function confirmacao() {
     return true;
 }
 
-
-
-
-
-
-
-
 </script>
 <template>
     <div class="row">
