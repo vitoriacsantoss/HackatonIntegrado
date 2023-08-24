@@ -4,34 +4,47 @@ import MButton from '@/components/MButton.vue'
 <template>
     <div class="main-header">
         <img class="logo" src="logo2.png" alt="">
-           <li class="nav">
-            <m-button texto="Home" @click="$router.push({ name: 'home' })" />
-           </li>  
-           <li class="nav">
-            <m-button texto="Buscar Imoveís" @click="$router.push({ name: 'buscar' })" />
-           </li>    
-           <li class="nav">
-            <m-button texto="Fale conosco" @click="$router.push({ name: 'contato' })" />
-           </li>  
+        
+        <div class="wrapLinks">
+            <div class="displayFlex">
+                <li class="nav">
+                 <m-button texto="Home" @click="$router.push({ name: 'home' })" />
+                </li>  
+                <li class="nav">
+                 <m-button texto="Buscar Imoveís" @click="$router.push({ name: 'buscar' })" />
+                </li>    
+                <li class="nav">
+                 <m-button texto="Fale conosco" @click="$router.push({ name: 'contato' })" />
+                </li>  
+            </div>
+
+        </div>
 
     </div>
 </template>
 
 <style scoped>
 .logo {
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 42%;
     height: 125px;
     width: 150px;
 }
 
 .main-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 60%;
+    display: grid;
+    grid-template-columns: 32% auto;
+    width: 100%;
     /* margin: auto */
     }
+    .displayFlex{
+        display: flex;
+
+    }
     .nav{
+        /* margin-left: 10%; */
     margin-top: 20px;
-    padding: 20px 35px 20px 35px
+    padding: 15px 35px 20px 35px
     }
 </style>
