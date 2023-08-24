@@ -5,9 +5,25 @@ import { ref, computed } from 'vue'
 const nome = ref('')
 const email = ref('')
 const celular = ref('')
-const obs = ref('')
 const telefone = ref('')
-const ok = ref(false)
+const mensagem = ref('')
+let enviar = ref(false)
+
+function confirmacao() {
+    console.log(enviar)
+    nome.value = "";
+    email.value = "";
+    celular.value = "";
+    telefone.value = "";
+    mensagem.value = ""
+    return true;
+}
+
+
+
+
+
+
 
 
 </script>
@@ -27,8 +43,7 @@ const ok = ref(false)
 
 
         <div class="contact-form">
-            <form id="contact-form" action="index.html" method="get" enctype="multipart/form-data">
-
+            <form @submit.prevent="enviar = confirmacao()">
                 <div class="info">
                     <h3 class="titu3">Informações de contato </h3>
                     <div>
@@ -51,17 +66,17 @@ const ok = ref(false)
 
                 <!-- contato-formulario -->
                 <div class="container-form">
-                    <form class="form" @submit.prevent="ok = validar()">
+                    <form class="form" @submit.prevent="enviar = confirmacao()">
                         <div class="centro">
                             <div class="dados">
                                 <br>
                                 <div class="nome">
-                                    <input type="text" v-on:keypress="ok = false" v-model="nome" required
+                                    <input type="text" v-model="nome" v-on:keypress="enviar = false" required
                                         placeholder="Digite seu nome" />
                                 </div>
 
                                 <div class="email">
-                                    <input type="email" v-on:keypress="ok = false" v-model="email"
+                                    <input type="email" v-model="email" v-on:keypress="enviar = false" required
                                         placeholder="Digite seu email" />
                                 </div>
                                 <br>
@@ -69,32 +84,36 @@ const ok = ref(false)
                                 <!-- <br>  -->
 
                                 <div class="telefoneCL">
-                                    <input type="telefoneCL" v-on:keypress="ok = false" v-model="celular" minlength=""
-                                        placeholder="Digite seu telefone" />
+                                    <input type="telefoneCL" v-model="celular" v-on:keypress="enviar = false" minlength=""
+                                        required placeholder="Digite seu telefone celular" />
                                 </div>
 
                                 <!-- <br> -->
                                 <div class="telefoneFX">
-                                    <input type="telefoneFX" v-on:keypress="ok = false" v-model="telefone" minlength=""
-                                        placeholder="Digite seu telefone" />
-                                    <p class="paga">{{ mensagemErro }}</p>
+                                    <input type="telefoneFX" v-model="telefone" v-on:keypress="enviar = false" minlength=""
+                                        required placeholder="Digite seu telefone" />
+                                    <p></p>
                                 </div>
 
                                 <div class="mensagem">
-                                    <textarea v-model="texto" placeholder="mensagem"> </textarea>
+                                    <textarea class="textarea-balao-up" v-model="mensagem"
+                                        v-on:keypress="enviar = false"></textarea>
                                 </div>
                                 <br>
                                 <br>
                                 <br>
-
-                                <button class="comp" type="submit" @click="ok = !ok">Enviar</button>
+                                <button type="submit" class="comp">Enviar</button>
 
                             </div>
                         </div>
                     </form>
+
                 </div>
             </form>
-            <div v-if="ok" class="baixo">Sua mensagem foi enviada,espere seu retorno! </div>
+
+        </div>
+        <div v-if="enviar" class="baixo">
+            <p> Sua mensagem foi enviada, aguarde seu retorno!</p>
         </div>
     </div>
 </template>
