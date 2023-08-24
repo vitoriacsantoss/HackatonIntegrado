@@ -12,23 +12,66 @@
             <h1>BUSCAR ÍMOVEIS</h1>
         </div>
     </div>
+    <div class="principal">
     <div class="form">
         <h2>BUSCA AVANÇADA</h2>
-        <label for=""></label>
-        <input class="inputUm" type="text" v-on:keypress="ok = false" v-model="endereco" placeholder="Digite seu endereço" />
-    <hr>
-    <label for="estado">Estado:</label>
-      <select v-on:keypress="ok = false" v-model="estado">
-        <option value="AC">Acre</option>
-        <option value="AL">Alagoas</option>
-        <option value="AP">Amapá</option>
-        <option value="AM">Amazonas</option>
+    <label for="estado"></label>
+      <select class="caixinha" v-on:keypress="ok = false" v-model="estado">
+        <option value="Alugar">Alugar</option>
+        <option value="Comprar">Comprar</option>
+      </select>
+        <p>Tipo de imóvel</p>
+         <select class="caixinha" v-on:keypress="ok = false" v-model="estado">
+        <option value="Casa">Casa</option>
+        <option value="Apartamento">Apartamento</option>
+        <option value="Terreno">Terreno</option>
+        </select>
+        <p>Cidades</p>
+        <select class="caixinha" v-on:keypress="ok = false" v-model="estado">
+        <option value="Joinville">Joinville</option>
+        <option value="Araquari">Araquari</option>
+      </select>
+        <p>Bairros</p>
+        <select class="caixinha" v-on:keypress="ok = false" v-model="estado">
+        <option value="Joinville">itinga</option>
+        <option value="Araquari">Araquari</option>
       </select>
     </div>
 
+    </div>
 </template>
 
 <style scoped>
+.principal{
+    padding: 10px 10px 500px 100px;
+    display: flex;
+    padding-left: 250px;
+}
+.informacoes{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 250px;
+    color: black;
+}
+.img{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 250px;
+    color: black;
+}
+p{
+    margin-top: 05%;
+    color: #ffffff;
+    font-weight: bold;
+}
+.caixinha{
+    border-radius: 5px;
+    padding: 5px 0px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
 input{
     border-radius: 5px;
     padding: 5px 0px;
@@ -39,7 +82,8 @@ input{
     margin-top: 10px;
 }
 .form{
-    margin-left: 420px;
+    border-radius: 2%;
+    margin-left: 100px;
     margin-top: 50px;
     padding: 20px;
     height: 20%;
