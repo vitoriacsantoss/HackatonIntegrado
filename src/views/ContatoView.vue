@@ -73,15 +73,12 @@ function confirmacao() {
                                         placeholder="Digite seu email" />
                                 </div>
                                 <br>
-
-                                <!-- <br>  -->
-
                                 <div class="telefoneCL">
                                     <input type="telefoneCL" v-model="celular" v-on:keypress="enviar = false" minlength=""
                                         required placeholder="Digite seu celular" />
                                 </div>
 
-                                <!-- <br> -->
+                            
                                 <div class="telefoneFX">
                                     <input type="telefoneFX" v-model="telefone" v-on:keypress="enviar = false" minlength=""
                                         required placeholder="Digite seu telefone" />
@@ -104,15 +101,45 @@ function confirmacao() {
 
                 </div>
             </form>
-
         </div>
+    </div>
         <div v-if="enviar" class="baixo">
             <p> Sua mensagem foi enviada, aguarde seu retorno!</p>
         </div>
-    </div>
+
 </template>
 
 <style scoped>
+
+.form {
+    height: 650px;
+    max-width: 700px;
+    padding: 25px;
+    /* border: 1px solid #ccc; */
+    /* background-color: #848486; */
+    width: 85vh;
+    font-family: 'Times New Roman', Times, serif;
+    transform: scale(0.8);
+    font-size: 22px;
+    margin-top: 4%;
+}
+
+
+.info {
+    margin-left: 8%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 0 0 0 70px;
+    list-style: none;
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 22px;
+    color: #535353;
+}
+
 textarea {
     resize: none;
     width: 1000px;
@@ -186,7 +213,7 @@ h2 {
 
 .container-form {
     margin-left: 35%;
-    margin-top: -15%;
+    margin-top: -19%;
 }
 
 .row {
@@ -208,51 +235,6 @@ h2 {
 .titu3 {
     padding: 0 0 0 20px;
 }
-
-.info {
-    margin-left: 8%;
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    padding: 0 0 0 70px;
-    list-style: none;
-    padding-left: 40px;
-    position: relative;
-    margin-bottom: 20px;
-    line-height: 22px;
-    color: #535353;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    color: white;
-    border: 1px solid #ccc;
-    transform: scale(0.7);
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-
-}
-
-.form {
-    max-width: 700px;
-    padding: 25px;
-    /* border: 1px solid #ccc; */
-    /* background-color: #848486; */
-    width: 85vh;
-    font-family: 'Times New Roman', Times, serif;
-    transform: scale(0.8);
-    font-size: 22px;
-    margin-top: 1%;
-}
-
-
-
 .dados {
     font-family: Arial, Helvetica, sans-serif;
     /* color: black; */

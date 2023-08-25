@@ -23,30 +23,30 @@ function confirmacao() {
             <div class="contact-form">
                 <form @submit.prevent="enviar = confirmacao()">
                     <div class="info">
-                
+
                         <div>
                             <p>
-                            <img class="img1" src="localizacao.png" alt="">
-                            Av Do Principe, 1186, Itapema do Norte - Itapoá /SC
+                                <img class="img1" src="localizacao.png" alt="">
+                                Av Do Principe, 1186, Itapema do Norte - Itapoá /SC
                             </p>
                         </div>
                         <div>
                             <p>
-                            <img class="img1" src="mensagem.png" alt="">
-                            rfconsultoriaimobiliaria@outlook.com.br 
-                        </p>
+                                <img class="img1" src="mensagem.png" alt="">
+                                rfconsultoriaimobiliaria@outlook.com.br
+                            </p>
                         </div>
                         <div>
-                        <p>
-                            <img class="img1" src="telefone.png" alt="">
-                            (47) 3443-3178
-                        </p>
+                            <p>
+                                <img class="img1" src="telefone.png" alt="">
+                                (47) 3443-3178
+                            </p>
                         </div>
                         <div>
-                        <p>
-                            <img class="img1" src="whatszapp.png" alt="">
-                            (47) 99684-3087
-                        </p>
+                            <p>
+                                <img class="img1" src="whatszapp.png" alt="">
+                                (47) 99684-3087
+                            </p>
                         </div>
                     </div>
                 </form>
@@ -59,11 +59,11 @@ function confirmacao() {
                 <p>
                     <router-link to="/" class="routerHome">Home</router-link>
                 </p>
-            </div>  
+            </div>
             <div>
                 <p>
                     <router-link to="/contato" class="routerFale">Fale conosco</router-link>
-                </p> 
+                </p>
             </div>
             <div>
                 <p>
@@ -78,26 +78,32 @@ function confirmacao() {
                 <p>Ficou com dúvida de como alugar</p>
                 <p>ou comprar o seu imóvel,</p>
                 <p>entraremos em contato, digite o seu email</p>
-                <div class="email">
-                    <input type="email" v-model="email" v-on:keypress="enviar = false" required placeholder="Email..." />
-                </div>
+                <input type="email" v-model="email" v-on:keypress="enviar = false" required placeholder="Email..." />
                 <p class="pzin">Ao informar meus dados, eu</p>
                 <p>concordo com a Política de Privacidade.</p>
 
                 <button type="submit" class="comp">Enviar</button>
             </form>
         </div>
-
     </div>
 </template>
 
 <style scoped>
+input {
+    padding: 2%;
+    width: 250px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
 .info {
     margin-left: 8%;
-    margin-top: 150px;
+    margin-top: 180px;
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 20px;
     padding: 0 0 0 70px;
     list-style: none;
     padding-left: 2px;
@@ -111,32 +117,23 @@ function confirmacao() {
     margin-top: 5px;
     height: 28px;
     width: 25px;
-    
+
 }
 
 .comp {
     color: white;
-    height: 10px;
-    width: 100px;
+    height: 34px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 47%;
+    margin-left: 0%;
     border: 1px solid#ccc;
     font-size: 1.5rem;
     background-color: #f28a31;
     margin-top: 20%;
-}
-
-.email {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 90px;
-    width: 70px;
-    padding: 15px;
-    margin-left: 47%;
-    margin-top: 20%;
-    margin-bottom: 15px;
-    color: #AAAAAA;
+    letter-spacing: 1px;
+    justify-content: center;
 }
 
 .routerBusca {
@@ -154,29 +151,8 @@ function confirmacao() {
     color: #AAAAAA;
 }
 
-.comp {
-    color: white;
-    height: 40px;
-    width: 270px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 47%;
-    border: 1px solid#ccc;
-    background-color: #f28a31;
-    margin-top: 20%;
-    letter-spacing: 1px;
-    justify-content: center;
-    margin-left: 0%;
-}
-
 .pzin {
-    margin-top: 20px;
-}
-
-.input {
-    height: 40px;
-    padding: 15px;
+    margin-top: 15px;
 }
 
 .main-footer {
@@ -190,7 +166,7 @@ function confirmacao() {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding-left: 300px;
+    padding-left: 250px;
 }
 
 .entramos {
@@ -202,7 +178,7 @@ function confirmacao() {
 
 .miniform {
     background-color: #021830;
-    width: 300px;
+    width: 280px;
     height: 350px;
     padding: 15px;
 }
@@ -212,11 +188,7 @@ function confirmacao() {
     align-items: flex-start;
     flex-direction: column;
     padding: 0px, 10px, 20px, 60px;
-    padding-left: 10%;
-}
-
-.bot {
-    background-color: #02193c;
+    padding-left: 6%;
 }
 
 
@@ -232,5 +204,4 @@ h1 {
     color: white;
     margin-top: 80px;
     margin-bottom: 30px;
-}
-</style>
+}</style>
