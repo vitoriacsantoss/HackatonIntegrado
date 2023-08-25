@@ -10,6 +10,7 @@ import { ref } from 'vue'
 
     </div>
     <div class="form">
+      <h1 class="titu"></h1>
     </div>
 
   </div>
@@ -19,6 +20,10 @@ import { ref } from 'vue'
 </template>
 
 <style scoped>
+.titu{
+  color: aliceblue;
+  font-size: 80px;
+}
 .form {
   display: flex;
   align-items: center;
@@ -38,8 +43,8 @@ import { ref } from 'vue'
 }
 
 .form {
-  height: 380px;
-  width: 650px;
+  height: 760px;
+  width: 1850px;
   background-color: #03033d80;
   position: absolute;
   border-top: 7px solid #f28a31;
