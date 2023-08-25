@@ -54,7 +54,7 @@ function confirmacao() {
         </div>
 
         <div class="links">
-            <h1>LINKS ok </h1>
+            <h1>LINKS</h1>
             <div>
                 <p>
                     <router-link to="/" class="routerHome">Home</router-link>
@@ -131,23 +131,12 @@ function confirmacao() {
 .email {
     font-family: Arial, Helvetica, sans-serif;
     height: 90px;
-    width: 50px;
+    width: 70px;
     padding: 15px;
     margin-left: 47%;
     margin-top: 20%;
     margin-bottom: 15px;
-
-
-}
-
-.baixo {
-    padding-left: 10%;
-    flex-direction: row;
-    font-size: medium;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    justify-content: center;
-    border: 5px;
-    display: flex;
+    color: #AAAAAA;
 }
 
 .routerBusca {
