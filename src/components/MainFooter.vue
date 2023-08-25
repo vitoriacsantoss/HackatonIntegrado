@@ -21,45 +21,60 @@ function confirmacao() {
             <h1>CONTATO</h1>
 
             <div class="contact-form">
+                <form @submit.prevent="enviar = confirmacao()">
                     <div class="info">
-                        
+                
                         <div>
-                            <img class="img1" src="localiz.png" alt="">
+                            <p>
+                            <img class="img1" src="localizacao.png" alt="">
                             Av Do Principe, 1186, Itapema do Norte - Itapoá /SC
+                            </p>
                         </div>
                         <div>
-                            <img class="img1" src="email.png" alt="">
-                            rfconsultoriaimobiliaria@outlook.com.br
+                            <p>
+                            <img class="img1" src="mensagem.png" alt="">
+                            rfconsultoriaimobiliaria@outlook.com.br 
+                        </p>
                         </div>
                         <div>
+                        <p>
                             <img class="img1" src="telefone.png" alt="">
                             (47) 3443-3178
+                        </p>
                         </div>
                         <div>
-                            <img class="img"
-                                src="https://cdn.icon-icons.com/icons2/792/PNG/512/whatsapp_icon-icons.com_65542.png"
-                                alt="">
+                        <p>
+                            <img class="img1" src="whatszapp.png" alt="">
                             (47) 99684-3087
+                        </p>
                         </div>
                     </div>
+                </form>
             </div>
         </div>
+
         <div class="links">
             <h1>LINKS</h1>
             <div>
-                <router-link to="/" class="routerHome">Home</router-link>
+                <p>
+                    <router-link to="/" class="routerHome">Home</router-link>
+                </p>
+            </div>  
+            <div>
+                <p>
+                    <router-link to="/contato" class="routerFale">Fale conosco</router-link>
+                </p> 
             </div>
             <div>
-                <router-link to="/contato" class="routerFale">Fale conosco</router-link>
+                <p>
+                    <router-link to="/buscar" class="routerBusca">Buscar imóveis</router-link>
+                </p>
             </div>
-            <div>
-                <router-link to="/buscar" class="routerBusca">Buscar imóveis</router-link>
-            </div>
-          
+
         </div>
         <div class="entramos">
             <h1>ENTRAMOS EM CONTATO</h1>
-             <form  class="miniform" @submit.prevent="enviar = confirmacao()">
+            <form class="miniform" @submit.prevent="enviar = confirmacao()">
                 <p>Ficou com dúvida de como alugar</p>
                 <p>ou comprar o seu imóvel,</p>
                 <p>entraremos em contato, digite o seu email</p>
@@ -69,19 +84,14 @@ function confirmacao() {
                 <p class="pzin">Ao informar meus dados, eu</p>
                 <p>concordo com a Política de Privacidade.</p>
 
-             <button type="submit" class="comp">Enviar</button>
+                <button type="submit" class="comp">Enviar</button>
             </form>
-            </div>
-
         </div>
-    
 
-
+    </div>
 </template>
 
 <style scoped>
-
-
 .info {
     margin-left: 8%;
     margin-top: 150px;
@@ -90,15 +100,20 @@ function confirmacao() {
     font-size: 14px;
     padding: 0 0 0 70px;
     list-style: none;
-    padding-left: 40px;
+    padding-left: 2px;
     position: relative;
     margin-bottom: 20px;
     line-height: 22px;
     color: #535353;
 }
+
 .img1 {
-    margin-top: 10px;
+    margin-top: 5px;
+    height: 28px;
+    width: 25px;
+    
 }
+
 .comp {
     color: white;
     height: 10px;
@@ -120,7 +135,7 @@ function confirmacao() {
     padding: 15px;
     margin-left: 47%;
     margin-top: 20%;
-margin-bottom: 15px;
+    margin-bottom: 15px;
 
 
 }
@@ -208,7 +223,7 @@ margin-bottom: 15px;
     align-items: flex-start;
     flex-direction: column;
     padding: 0px, 10px, 20px, 60px;
-    padding-left: 15%;
+    padding-left: 10%;
 }
 
 .bot {
@@ -222,15 +237,6 @@ margin-bottom: 15px;
     font-size: 12px;
 }
 
-img {
-    height: 12px;
-    width: 12px;
-}
-
-.img1 {
-    height: 20px;
-    width: 20px;
-}
 
 h1 {
     font-size: medium;

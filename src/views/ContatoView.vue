@@ -78,7 +78,7 @@ function confirmacao() {
 
                                 <div class="telefoneCL">
                                     <input type="telefoneCL" v-model="celular" v-on:keypress="enviar = false" minlength=""
-                                        required placeholder="Digite seu telefone celular" />
+                                        required placeholder="Digite seu celular" />
                                 </div>
 
                                 <!-- <br> -->
@@ -89,8 +89,9 @@ function confirmacao() {
                                 </div>
 
                                 <div class="mensagem">
-                                    <textarea class="textarea-balao-up" v-model="mensagem"
-                                        v-on:keypress="enviar = false"></textarea>
+                                    <textarea class="textarea-balao-up" v-model="mensagem" v-on:keypress="enviar = false" 
+                                    required placeholder="Mensagem">
+                                    </textarea>
                                 </div>
                                 <br>
                                 <br>
