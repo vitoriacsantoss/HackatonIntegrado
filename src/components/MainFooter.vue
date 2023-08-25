@@ -54,7 +54,7 @@ function confirmacao() {
         </div>
 
         <div class="links">
-            <h1>LINKS</h1>
+            <h1>LINKS ok </h1>
             <div>
                 <p>
                     <router-link to="/" class="routerHome">Home</router-link>
