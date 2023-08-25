@@ -38,14 +38,44 @@
       </select>
     </div>
 
+    <div class="containerimg">
+    <div>
+        <img class="img1" src="AP.jpg" alt="">
     </div>
+    <div>
+        <img class="img2" src="AP2.jpg" alt="">
+    </div>
+    <div>
+        <img class="img3" src="AP3.jpg" alt="">
+
+    </div>
+    </div>
+
+
+    <div class="informacoes">show</div>
+    </div>
+
 </template>
 
 <style scoped>
-.principal{
-    padding: 10px 10px 500px 100px;
+.containerimg{
     display: flex;
-    padding-left: 250px;
+    flex-direction: column;
+}
+.img1{
+    height: 100px;
+    width: 50px;
+    margin-bottom: 50%;
+}
+.img2{
+    height: 30px;
+}
+.img3{
+    height: 10px;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
 }
 .informacoes{
     display: flex;
