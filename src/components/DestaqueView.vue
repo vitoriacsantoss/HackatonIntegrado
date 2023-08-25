@@ -4,7 +4,7 @@ import MButton from '@/components/MButton.vue'
 </script>
 <template>
     <div class="titu">
-        <h1>DESTAQUES:</h1>
+        <h1>DESTAQUES: mudar</h1>
    </div>
    <div class="destaques-links">
        <div class="item-destaque-link">
