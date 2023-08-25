@@ -33,7 +33,7 @@
       </select>
         <p>Bairros</p>
         <select class="caixinha" v-on:keypress="ok = false" v-model="estado">
-        <option value="Joinville">itinga</option>
+        <option value="Joinville">Itinga</option>
         <option value="Araquari">Araquari</option>
       </select>
     </div>
