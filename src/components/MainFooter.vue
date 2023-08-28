@@ -129,7 +129,7 @@ input {
     align-items: center;
     margin-left: 0%;
     border: 1px solid#ccc;
-    font-size: 1.5rem;
+    font-size: 20px;
     background-color: #f28a31;
     margin-top: 20%;
     letter-spacing: 1px;
