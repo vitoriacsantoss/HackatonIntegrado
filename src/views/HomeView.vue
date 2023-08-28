@@ -1,6 +1,7 @@
 <script setup>
 import DestaqueView from '@/components/DestaqueView.vue'
 import { ref } from 'vue'
+const estado = ref('')
 
 </script>
 
@@ -10,9 +11,56 @@ import { ref } from 'vue'
 
     </div>
     <div class="form">
-      <h1 class="titu"></h1>
-    </div>
+      <!-- <div class="form2"> -->
+      <!-- <div class="caixinha"> -->
 
+      <select class="caixinha1" v-on:keypress="ok = false">
+        <option value="">Comprar</option>
+        <option value="Alugar">Alugar</option>
+      </select>
+
+      <select class="caixinha1" v-on:keypress="ok = false">
+        <option value="">Todos</option>
+        <option value="Casa">Casa</option>
+        <option value="Apartamento">Apê</option>
+        <option value="Terreno">Terreno</option>
+      </select>
+
+      <select class="caixinha1" v-on:keypress="ok = false">
+        <option value="">Cidades</option>
+        <option value="Joinville">Joinville</option>
+        <option value="Araquari">Araquari</option>
+      </select>
+
+      <select class="caixinha1" v-on:keypress="ok = false">
+        <option value="">Bairros</option>
+        <option value="Joinville">Boehmerwald</option>
+        <option value="Araquari">Fátima</option>
+      </select>
+
+      <select class="caixinha1" v-on:keypress="ok = false">
+        <option value="">Quartos</option>
+        <option value="um">01</option>
+        <option value="dois">02</option>
+        <option value="mais">mais</option>
+      </select>
+      <select class="caixinha1" v-on:keypress="ok = false">
+        <option value="">Banheiros</option>
+        <option value="um">01</option>
+        <option value="dois">02</option>
+        <option value="mais">mais</option>
+      </select>
+
+      <select class="caixinha1" v-on:keypress="ok = false">
+        <option value="">Garagem</option>
+        <option value="um">01</option>
+        <option value="dois">02</option>
+        <option value="mais">mais</option>
+      </select>
+
+      <button class="botao" @click="$router.push({ name: 'buscar' })">BUSCAR</button>
+     
+    </div>
   </div>
   <div class="destaques">
     <destaque-view />
@@ -20,14 +68,77 @@ import { ref } from 'vue'
 </template>
 
 <style scoped>
-.titu{
+.botao {
+  display: flex;
+  align-items: center;
+  background-color: #f28a31;
+  color: #ffffff;
+  width: 20%;
+  margin-left: 16px;
+  padding: 10px 140px;
+  border: 2px solid #f28a31;
+  transition: background-color 1s ease, color 1s ease;
+  justify-content: center;
+}
+
+.principal {
+  display: flex;
+  flex-direction: row;
+}
+
+.form2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  /* border-radius: 2%; */
+  /* margin-left: 200px;
+  margin-top: 50px; */
+  /* padding: 20px; */
+  /* height: 20%; */
+  /* background-color: #f28a31; */
+}
+
+/* .caixinha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+
+
+.caixinha1 {
+  padding: 0 70px;
+  width: 40%;
+  margin-left: 16px;
+  background-color: #f2f2f2;
+  height: 38px;
+  line-height: 38px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+  color: #f28a31;
+  font-size: 17px;
+  background: #010d2e80;
+  /* margin-top: 10%; */
+}
+
+.titu {
   color: aliceblue;
   font-size: 80px;
 }
+
 .form {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center; */
   align-items: center;
-  background-color: #03033d80;
+  padding: 30px;
+
+  border-top: 7px solid #f28a31;
+  background-color: #0f0f4180;
+  height: 400px;
+  width: 700px;
+  position: absolute;
 }
 
 
@@ -40,14 +151,6 @@ import { ref } from 'vue'
 
 .destaques {
   margin-top: 100px;
-}
-
-.form {
-  height: 760px;
-  width: 1850px;
-  background-color: #03033d80;
-  position: absolute;
-  border-top: 7px solid #f28a31;
 }
 
 .carousel__item {
@@ -63,5 +166,4 @@ import { ref } from 'vue'
   padding-bottom: 200px;
   background-size: cover;
 }
-
 </style>

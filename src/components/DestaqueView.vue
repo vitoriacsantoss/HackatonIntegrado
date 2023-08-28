@@ -1,68 +1,142 @@
 <script setup>
+import MButton from '@/components/MButton.vue'
 
 
 </script>
 <template>
     <div class="titu">
-        <h1>DESTAQUES:</h1>
-   </div>
-   <div class="destaques-links">
-     
-   </div>
+        <h1>DESTAQUES</h1>
+    </div>
+    <div class="cointainerdstq">
+        <img class="img1" src="casona.jpg" alt="">
+        <img class="img2" src="1.jpg" alt="">
+        <img class="img3" src="casinha.jpg" alt="">
+    </div>
+
+    <div class="containerinfo">
+        <div class="info">
+            <div class="bairro">Glória | Joinville</div>
+            <div class="rs">R$390.000,00</div>
+            <div class="m2">50,90m²</div>
+        </div>
+        <div class="info2">
+            <div class="bairro">Fátima | Joinville</div>
+            <div class="rs">R$340.000,00</div>
+            <div class="m2">68,88m²</div>
+        </div>
+        <div class="info3">
+            <div class="bairro">América | Joinville</div>
+            <div class="rs">R$320.000,00</div>
+            <div class="m2">76,00m²</div>
+        </div>        
+    </div>
+    <button class="botao" @click="$router.push({ name: 'buscar' })">VER MAIS ÍMOVEIS</button>
 </template>
 
 <style scoped>
-
-.img1{
-    height: 300px;
-    width: 300px;
-    margin-bottom: 20%;
-    margin-left: 70px;
-    margin-top: 50px;
+.botao{
+    margin-left: 44%;
+    background-color: #02193c;
+    color: #ffffff;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    transition: background-color 1s ease, color 1s ease;
 }
-.img2{
-    height: 300px;
-    width: 300px;
-    margin-bottom: 20%;
-    margin-left: 70px;
-}
-.img3{
-    height: 300px;
-    width: 300px;
-    margin-bottom: 20%;
-    margin-left: 70px;
+.bairro {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f28a31;
 }
 
-.containerinfo{
+.info {
+    margin-left: -101%;
+    margin-top: 215%;
+    font-size: large;
     display: flex;
     flex-direction: column;
+}
+
+.info2 {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    margin-top: 215%;
+    margin-left: 20%;
+}
+
+.info3 {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    margin-top: 215%;
+    margin-left: 19%;
+}
+
+.containerinfo {
+    display: flex;
+    flex-direction: row;
     margin-left: 61%;
     margin-top: -100%;
+    margin-bottom: 100px;
 }
-.containerimg{
-    margin-left: 38%;
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.cointainerdstq {
+    display: flex;
+    flex-direction: row;
+    margin-left: 195px;
+}
+
+.img1 {
+    margin-left: 200px;
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
 
- .titu{
+.img2 {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20%;
+    margin-left: 70px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img3 {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20%;
+    margin-left: 70px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titu {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: grey;
- }
+}
 
- .destaques-links {
+.destaques-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 50%;
     margin: auto
- }
+}
 
- .item-destaque-link {
+.item-destaque-link {
     margin-top: 25px;
     padding: 0 20px
- }
-
+}
 </style>
+
