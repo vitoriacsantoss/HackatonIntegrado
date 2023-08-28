@@ -1,5 +1,5 @@
 <script setup>
-import MButton from '@/components/MButton.vue'
+
 
 </script>
 <template>
@@ -7,21 +7,43 @@ import MButton from '@/components/MButton.vue'
         <h1>DESTAQUES:</h1>
    </div>
    <div class="destaques-links">
-       <div class="item-destaque-link">
-        <m-button texto="Terreno" @click="$router.push({ name: 'terreno' })" />
-       </div>
-       <div class="item-destaque-link">
-        <m-button texto="Apartamento" @click="$router.push({ name: 'apartamento' })" />
-        
-       </div>
-       <div class="item-destaque-link">
-        <m-button texto="Casa" @click="$router.push({ name: 'casa' })" />
-        
-       </div>
+     
    </div>
 </template>
 
 <style scoped>
+
+.img1{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20%;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.img2{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20%;
+    margin-left: 70px;
+}
+.img3{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20%;
+    margin-left: 70px;
+}
+
+.containerinfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 61%;
+    margin-top: -100%;
+}
+.containerimg{
+    margin-left: 38%;
+    display: flex;
+    flex-direction: column;
+}
 
  .titu{
     display: flex;
