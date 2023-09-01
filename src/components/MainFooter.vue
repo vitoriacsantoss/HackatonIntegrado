@@ -26,25 +26,25 @@ function confirmacao() {
 
                         <div>
                             <p>
-                                <img class="img1" src="localizacao.png" alt="">
+                                <img class="img1" src="@/assets/imgs/localizacao.png" alt="">
                                 Av Do Principe, 1186, Itapema do Norte - Itapoá /SC
                             </p>
                         </div>
                         <div>
                             <p>
-                                <img class="img1" src="mensagem.png" alt="">
+                                <img class="img1" src="@/assets/imgs/mensagem.png" alt="">
                                 rfconsultoriaimobiliaria@outlook.com.br
                             </p>
                         </div>
                         <div>
                             <p>
-                                <img class="img1" src="telefone.png" alt="">
+                                <img class="img1" src="@/assets/imgs/telefone.png" alt="">
                                 (47) 3443-3178
                             </p>
                         </div>
                         <div>
                             <p>
-                                <img class="img1" src="whatszapp.png" alt="">
+                                <img class="img1" src="@/assets/imgs/whatszapp.png" alt="">
                                 (47) 99684-3087
                             </p>
                         </div>

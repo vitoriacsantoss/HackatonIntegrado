@@ -67,16 +67,16 @@ const estado = ref('')
 
         <div class="containerimg">
             <div class="oi">
-                <img class="img1" src="APT.jpg" alt="">
+                <img class="img1" src="@/assets/imgs/APT.jpg" alt="">
             </div>
             <div>
-                <img class="img2" src="1.png" alt="">
+                <img class="img2" src="@/assets/imgs/1.png" alt="">
             </div>
             <div>
-                <img class="img3" src="APT2.jpg" alt="">
+                <img class="img3" src="@/assets/imgs/APT2.jpg" alt="">
             </div>
             <div>
-                <img class="img4" src="AP3.jpg" alt="">
+                <img class="img4" src="@/assets/imgs/AP3.jpg" alt="">
             </div>
 
         </div>
@@ -90,16 +90,16 @@ const estado = ref('')
                 <div class="rs">R$390.000,00</div>
 
                 <div>
-                    <img class="m2" src="m2.png" alt=""> 50,90m²
+                    <img class="m2" src="@/assets/imgs/m2.png" alt=""> 50,90m²
                 </div>
                 <div>
-                    <img class="quarto" src="quarto.png" alt="">
+                    <img class="quarto" src="@/assets/imgs/quarto.png" alt="">
                     <div class="qrt">
                         2 Quartos
                     </div>
                 </div>
                 <div>
-                    <img class="banheiro" src="banheiro.png" alt="">
+                    <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
                     1 Banheiro
                 </div>
             </div>
@@ -109,18 +109,18 @@ const estado = ref('')
                 <div class="bairro1">Bucarein | Joinville</div>
                 <div class="rs">R$340.000,00</div>
                 <div>
-                    <img class="m2" src="m2.png" alt="">
+                    <img class="m2" src="@/assets/imgs/m2.png" alt="">
                     68,88m²
                 </div>
                 <div>
-                    <img class="quarto" src="quarto.png" alt="">
+                    <img class="quarto" src="@/assets/imgs/quarto.png" alt="">
                     <div class="qrt">
                         2 Quartos
                     </div>
 
                 </div>
                 <div>
-                    <img class="banheiro" src="banheiro.png" alt="">
+                    <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
                     1 Banheiro
                 </div>
             </div>
@@ -128,18 +128,18 @@ const estado = ref('')
                 <div class="bairro1">Profipo | Joinville</div>
                 <div class="rs">R$320.000,00</div>
                 <div>
-                    <img class="m2" src="m2.png" alt="">
+                    <img class="m2" src="@/assets/imgs/m2.png" alt="">
                     76,00m²
                 </div>
                 <div>
-                    <img class="quarto" src="quarto.png" alt="">
+                    <img class="quarto" src="@/assets/imgs/quarto.png" alt="">
                     <div class="qrt">
                         2 Quartos
                     </div>
 
                 </div>
                 <div>
-                    <img class="banheiro" src="banheiro.png" alt="">
+                    <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
                     1 Banheiro
                 </div>
             </div>
@@ -149,18 +149,18 @@ const estado = ref('')
         <div class="bairro">Fátima | Joinville</div>
         <div class="rs">R$320.000,00</div>
         <div>
-            <img class="m2" src="m2.png" alt="">
+            <img class="m2" src="@/assets/imgs/m2.png" alt="">
             76,00m²
         </div>
         <div>
-            <img class="quarto" src="quarto.png" alt="">
+            <img class="quarto" src="@/assets/imgs/quarto.png" alt="">
             <div class="qrt">
                 2 Quartos
             </div>
 
         </div>
         <div>
-            <img class="banheiro" src="banheiro.png" alt="">
+            <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
             1 Banheiro
         </div>
     </div>

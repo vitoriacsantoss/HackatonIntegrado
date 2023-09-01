@@ -4,7 +4,7 @@
 <template>
     <div class="footer-cima">
         <div>
-            <img class="logo" src="logo2.png" alt="">
+            <img class="logo" src="@/assets/imgs/logo2.png" alt="">
         </div>
         <div>
             <p class="item">QUERENDO REALIZAR SEU SONHO?</p>

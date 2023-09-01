@@ -8,9 +8,9 @@ import MButton from '@/components/MButton.vue'
         <h1>DESTAQUES</h1>
     </div>
     <div class="cointainerdstq">
-        <img class="img1" src="casona.jpg" alt="">
-        <img class="img2" src="1.jpg" alt="">
-        <img class="img3" src="casinha.jpg" alt="">
+        <img class="img1" src="@/assets/imgs/casona.jpg" alt="">
+        <img class="img2" src="@/assets/imgs/1.jpg" alt="">
+        <img class="img3" src="@/assets/imgs/casinha.jpg" alt="">
     </div>
 
     <div class="containerinfo">

@@ -3,7 +3,7 @@ import MButton from '@/components/MButton.vue'
 </script>
 <template>
     <div class="main-header">
-        <img class="logo" src="logo2.png" alt="">
+        <img class="logo" src="@/assets/imgs/logo2.png" alt="">
         
         <div class="wrapLinks">
             <div class="displayFlex">

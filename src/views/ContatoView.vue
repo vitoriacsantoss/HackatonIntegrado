@@ -40,19 +40,19 @@ function confirmacao() {
                 <div class="info">
                     <h3 class="titu3">Informações de contato </h3>
                     <div>
-                        <img class="img1" src="loc.png" alt="">
+                        <img class="img1" src="@/assets/imgs/loc.png" alt="">
                         Av Do Principe, 1186, Itapema do Norte - Itapoá /SC
                     </div>
                     <div>
-                        <img class="img1" src="caixa.png" alt="">
+                        <img class="img1" src="@/assets/imgs/caixa.png" alt="">
                         rfconsultoriaimobiliaria@outlook.com.br
                     </div>
                     <div>
-                        <img class="img1" src="telefone2.png" alt="">
+                        <img class="img1" src="@/assets/imgs/telefone2.png" alt="">
                         (47) 3443-3178
                     </div>
                     <div>
-                        <img class="img1" src="wpp.png" alt="">
+                        <img class="img1" src="@/assets/imgs/wpp.png" alt="">
                         (47) 99684-3087
                     </div>
                 </div>

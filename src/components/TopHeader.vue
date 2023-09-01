@@ -5,7 +5,7 @@
             CRECI 101213
         </div>
         <div>
-            <img class="img1" src="telefone.png" alt="">
+            <img class="img1" src="@/assets/imgs/telefone.png" alt="">
              (47) 1234-1234
         </div>
         <div>
@@ -13,7 +13,7 @@
             (47) 91234-1234
         </div>
         <div>
-            <img class="img1" src="email.png" alt="">
+            <img class="img1" src="@/assets/imgs/email.png" alt="">
             contato@contato.com.br
             
         </div>
