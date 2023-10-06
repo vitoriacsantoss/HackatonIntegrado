@@ -102,6 +102,9 @@ const estado = ref('')
                     <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
                     1 Banheiro
                 </div>
+                <div class="botao1"> 
+                    <button @click="$router.push({ name: 'saibamais01' })">Saiba Mais</button>
+                </div>
             </div>
 
 
@@ -123,6 +126,9 @@ const estado = ref('')
                     <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
                     1 Banheiro
                 </div>
+                <div class="botao1"> 
+                    <button @click="$router.push({ name: 'saibamais02' })">Saiba Mais</button>
+                </div>
             </div>
             <div class="info2">
                 <div class="bairro1">Profipo | Joinville</div>
@@ -142,26 +148,32 @@ const estado = ref('')
                     <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
                     1 Banheiro
                 </div>
+                <div class="botao1"> 
+                    <button @click="$router.push({ name: 'saibamais03' })">Saiba Mais</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="info3">
-        <div class="bairro">Fátima | Joinville</div>
-        <div class="rs">R$320.000,00</div>
-        <div>
-            <img class="m2" src="@/assets/imgs/m2.png" alt="">
-            76,00m²
-        </div>
-        <div>
-            <img class="quarto" src="@/assets/imgs/quarto.png" alt="">
-            <div class="qrt">
+            <div class="info3">
+            <div class="bairro">Fátima | Joinville</div>
+            <div class="rs">R$320.000,00</div>
+            <div>
+                <img class="m2" src="@/assets/imgs/m2.png" alt="">
+                76,00m²
+            </div>
+            <div>
+                <img class="quarto" src="@/assets/imgs/quarto.png" alt="">
+                <div class="qrt">
                 2 Quartos
             </div>
 
-        </div>
+            </div>
         <div>
             <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
             1 Banheiro
+        </div>
+        <div class="botao1"> 
+             <button @click="$router.push({ name: 'saibamais04' })">Saiba Mais</button>
         </div>
     </div>
 </template>
@@ -222,7 +234,7 @@ const estado = ref('')
 }
 
 .bairro {
-margin-top: 20%;
+    margin-top: 20%;
     font-size: 40px;
     font-weight: bold;
     color: #f28a31;
@@ -295,7 +307,7 @@ margin-top: 20%;
 .containerimg {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .principal {
