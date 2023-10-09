@@ -1,9 +1,10 @@
 //import './assets/main.css'
-import 'vue3-carousel/dist/carousel.css'
+// import 'vue3-carousel/dist/carousel.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap'
+import '@popperjs/core'
 
 import router from './router'
 

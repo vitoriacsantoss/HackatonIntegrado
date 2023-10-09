@@ -114,10 +114,10 @@ const estado = ref('')
   background-color: #f2f2f2;
   height: 38px;
   line-height: 38px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
-  color: #f28a31;
-  font-size: 17px;
-  background: #010d2e80;
+  font-family: sans-serif;
+  color: #999999;
+  font-size: 15px;
+  background: #01081d80;
   /* margin-top: 10%; */
 }
 

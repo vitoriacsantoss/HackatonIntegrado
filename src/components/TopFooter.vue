@@ -4,7 +4,7 @@
 <template>
     <div class="footer-cima">
         <div>
-            <img class="logo" src="@/assets/imgs/logo2.png" alt="">
+            <img class="logo" src="logoIH.jpeg" alt="">
         </div>
         <div>
             <p class="item">QUERENDO REALIZAR SEU SONHO?</p>
@@ -40,7 +40,7 @@ button:hover {
 .logo {
     margin-top: 15%;
     height: 125px;
-    width: 150px;
+    width: 125px;
 }
 
 .footer-cima {
