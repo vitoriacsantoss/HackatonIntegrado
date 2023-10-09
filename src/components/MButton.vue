@@ -18,7 +18,8 @@ button {
 }
 
 button:hover {
-    background-color:  #f28a31;
+    font-family: "Open Sans" sans-serif;
+    background-color:  #f28a3180;
     color: black;
 }
 

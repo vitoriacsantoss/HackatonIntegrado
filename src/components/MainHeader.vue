@@ -3,7 +3,7 @@ import MButton from '@/components/MButton.vue'
 </script>
 <template>
     <div class="main-header">
-        <img class="logo" src="logobranca.jpeg" alt="">
+        <img class="logo" src="@/assets/imgs/logobranca.jpeg" alt="">
         
         <div class="wrapLinks">
             <div class="displayFlex">
@@ -28,8 +28,8 @@ import MButton from '@/components/MButton.vue'
     margin-bottom: 1%;
     margin-top: 1%;
     margin-left: 42%;
-    height: 130px;
-    width: 130px;
+    height: 145px;
+    width: 135px;
     border-radius: 50%;
 }
 

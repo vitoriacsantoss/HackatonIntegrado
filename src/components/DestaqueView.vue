@@ -4,6 +4,7 @@ import MButton from '@/components/MButton.vue'
 
 </script>
 <template>
+    <div class="container">
     <div class="titu">
         <h1>DESTAQUES</h1>
     </div>
@@ -31,9 +32,13 @@ import MButton from '@/components/MButton.vue'
         </div>        
     </div>
     <button class="botao" @click="$router.push({ name: 'buscar' })">VER MAIS ÍMOVEIS</button>
+</div>
 </template>
 
 <style scoped>
+.container{
+    font-family: "Open Sans" sans-serif;
+}
 .botao{
     margin-left: 44%;
     background-color: #02193c;
@@ -49,7 +54,7 @@ import MButton from '@/components/MButton.vue'
 }
 
 .info {
-    margin-left: -101%;
+    margin-left: -130%;
     margin-top: 215%;
     font-size: large;
     display: flex;
@@ -61,7 +66,7 @@ import MButton from '@/components/MButton.vue'
     display: flex;
     flex-direction: column;
     margin-top: 215%;
-    margin-left: 20%;
+    margin-left: 28%;
 }
 
 .info3 {
@@ -69,13 +74,14 @@ import MButton from '@/components/MButton.vue'
     display: flex;
     flex-direction: column;
     margin-top: 215%;
-    margin-left: 19%;
+    margin-left: 25%;
 }
 
 .containerinfo {
     display: flex;
     flex-direction: row;
     margin-left: 61%;
+    /* margin-right: 10px; */
     margin-top: -100%;
     margin-bottom: 100px;
 }
@@ -87,7 +93,7 @@ h1 {
 .cointainerdstq {
     display: flex;
     flex-direction: row;
-    margin-left: 195px;
+    margin-left: -05%;
 }
 
 .img1 {

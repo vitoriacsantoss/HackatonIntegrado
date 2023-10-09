@@ -23,28 +23,41 @@ function confirmacao() {
 </script>
 
 <template>
+  <hr>
+  <div class="tudo">
+  <div class="titulo">
+    <h3>Cód.: 610 - Apartamento à venda, no Floresta | Joinville</h3>
+    <br>
+    <p>(Simbolo) Rua: Ibirapuera 353</p>
+  </div>
+  <div class="carrosel">
    <Carousel>
     <Slide key="1">
       <div class="carousel__item">
-        <img class="m2" src="https://static-cse.canva.com/blob/759728/ComoTirareEditarSuaFotoparaPerfilemRedesSociaisfeaturedimagee1559023010630.58b76396.avif" alt=""> 
+        <img class="img1" src="https://arkpad.com.br/wp-content/uploads/2020/04/decoracao-de-quarto-93.jpg" alt=""> 
       </div>
     </Slide>
     <Slide key="2">
       <div class="carousel__item">
-        <img class="m2" src="https://static-cse.canva.com/blob/759728/ComoTirareEditarSuaFotoparaPerfilemRedesSociaisfeaturedimagee1559023010630.58b76396.avif" alt=""> 
+        <img class="img1" src="https://cdn.awsli.com.br/2500x2500/1597/1597961/produto/125798320/63bba276c4.jpg" alt=""> 
       </div>
     </Slide>
     <Slide key="3">
       <div class="carousel__item">
-        <img class="m2" src="https://static-cse.canva.com/blob/759728/ComoTirareEditarSuaFotoparaPerfilemRedesSociaisfeaturedimagee1559023010630.58b76396.avif" alt=""> 
+        <img class="img1" src="https://portal.loft.com.br/wp-content/uploads/2022/10/decoracao-lavabo-branco-espelho-pia-vaso-planta-seca-Quattrino.jpg" alt=""> 
       </div>
     </Slide>
     
     <template #addons>
-      <Navigation />
+      <!-- <Navigation /> -->
       <Pagination />
     </template>
   </Carousel>
+  </div>
+  <div class="mapa">
+    <h1 class="tituloLoc">Localização:</h1>
+    <iframe width="1170" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=rua+ibirapuera+floresta&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  </div>
 
 
   <div class="botao">
@@ -71,15 +84,81 @@ function confirmacao() {
         placeholder="Olá, tenho interesse neste imóvel, Apartameto à venda, 2 quartos, Jardim da Barra - Itapoá/SC, código 610. Aguardo breve o contato. Obrigado!">
       </textarea>
     </div>
+    <div class="ligue">
+      <h1 class="ligueAgora">LIGUE AGORA!</h1>
+      <div class="contato">
+      <img class="logoLoc" src="@/assets/imgs/loc.png" alt="">
+      <div class="endereco">
+      <h4>Endereço</h4>
+      <p>Av Do Príncipe, 1186, Itapema do Norte - Itapoá/SC</p>
+      </div>
+      <img class="logoZap" src="@/assets/imgs/wpp.png" alt="">
+      <div class="zap">
+      <h4>WhatsApp</h4>
+      <p>(47) 996843087</p>
+    </div>
+    </div>
+    </div>
   </div>
+</div>
 </template>
 
 <style scoped>
+.contato{
+  margin-top: 30px;
+}
+.tituloLoc{
+  margin-bottom: 1%;
+  font-family: "Open Sans" sans-serif;
+}
+.mapa{
+  margin-left: 21%;
+  margin-top: 5%;
+}
+.h4{
+  font-size: 4px;
+}
+.endereco{
+  margin-left: 20%;
+  margin-top: -19%;
+  font-size: 12px;
+}
+.zap{
+  margin-left: 20%;
+  margin-top: -19%;
+  font-size: 12px;
+}
+.ligueAgora{
+  font-size: 25px;
+}
+.ligue{
+  font-size: 13px;
+  margin-top: 18%;
+}
+.titulo{
+  font-family: "Open Sans" sans-serif;
+  font-size: 20px, bold;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  margin-left: 21%;
+}
+.tudo{
+  margin-bottom: 30%;
+  margin-top: 03%;
+}
+.carrosel{
+  margin-top: 2%;
+  margin-left: -25%;
 
-
+}
+.img1{
+  width: 600px;
+  height: 450px;
+}
 .carousel__item {
   width: 600px;
-  height: 300px;
+  height: 450px;
   background-color: var(--vc-clr-primary);
   color: var(--vc-clr-white);
   font-size: 20px;
@@ -107,6 +186,9 @@ h2 {
 }
 
 .form {
+  font-family: "Open Sans" sans-serif;
+  margin-top: -70%;
+  margin-bottom: 80%;
   background-color: #f28a31;
   width: 20%;
   border-radius: 02%;
