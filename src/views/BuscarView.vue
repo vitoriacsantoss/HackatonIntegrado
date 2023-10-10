@@ -38,25 +38,31 @@ const estado = ref('')
             </select>
             <div class="lado">
                 <p>Quartos</p>
-                <select class="caixinha" v-on:keypress="ok = false" v-model="estado">
+                <select class="form-quarto" v-on:keypress="ok = false" v-model="estado">
                     <option value="um">01</option>
                     <option value="dois">02</option>
                     <option value="mais">mais</option>
                 </select>
-                <p>Suítes</p>
-                <select class="caixinha" v-on:keypress="ok = false" v-model="estado">
+                <div class="suites">
+                    <p>Suítes</p>
+
+                </div>
+                <select class="form-suite" v-on:keypress="ok = false" v-model="estado">
                     <option value="um">01</option>
                     <option value="dois">02</option>
                     <option value="mais">mais</option>
                 </select>
                 <p>Banheiros</p>
-                <select class="caixinha" v-on:keypress="ok = false" v-model="estado">
+                <select class="form-banheiro" v-on:keypress="ok = false" v-model="estado">
                     <option value="um">01</option>
                     <option value="dois">02</option>
                     <option value="mais">mais</option>
                 </select>
-                <p>Garagem</p>
-                <select class="caixinha" v-on:keypress="ok = false" v-model="estado">
+
+                <div class="garagem">
+                    <p>Garagem</p>
+                </div>
+                <select class="form-garagem" v-on:keypress="ok = false" v-model="estado">
                     <option value="um">01</option>
                     <option value="dois">02</option>
                     <option value="mais">mais</option>
@@ -127,7 +133,7 @@ const estado = ref('')
                     1 Banheiro
                 </div>
                 <div class="botao1"> 
-                    <button @click="$router.push({ name: 'saibamais02' })">Saiba Mais</button>
+                    <button class="botSaibaMais1" @click="$router.push({ name: 'saibamais02' })">Saiba Mais</button>
                 </div>
             </div>
             <div class="info2">
@@ -149,49 +155,152 @@ const estado = ref('')
                     1 Banheiro
                 </div>
                 <div class="botao1"> 
-                    <button @click="$router.push({ name: 'saibamais03' })">Saiba Mais</button>
+                    <button class="botSaibaMais2" @click="$router.push({ name: 'saibamais03' })">Saiba Mais</button>
                 </div>
             </div>
         </div>
     </div>
             <div class="info3">
             <div class="bairro">Fátima | Joinville</div>
-            <div class="rs">R$320.000,00</div>
+            <div class="rs1">R$320.000,00</div>
             <div>
-                <img class="m2" src="@/assets/imgs/m2.png" alt="">
+                <img class="m21" src="@/assets/imgs/m2.png" alt="">
                 76,00m²
             </div>
             <div>
-                <img class="quarto" src="@/assets/imgs/quarto.png" alt="">
-                <div class="qrt">
+                <img class="quarto1" src="@/assets/imgs/quarto.png" alt="">
+                <div class="qrt1">
                 2 Quartos
             </div>
 
             </div>
         <div>
-            <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
+            <img class="banheiro1" src="@/assets/imgs/banheiro.png" alt="">
             1 Banheiro
         </div>
         <div class="botao1"> 
-             <button @click="$router.push({ name: 'saibamais04' })">Saiba Mais</button>
+             <button class="botSaibaMais3" @click="$router.push({ name: 'saibamais04' })">Saiba Mais </button>
         </div>
     </div>
 </template>
 
 
 <style scoped>
+
+.caixinha {
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    width: 260px;
+}
+
+.form {
+    border-radius: 2%;
+    margin-left: 200px;
+    margin-top: 50px;
+    padding: 20px;
+    height: 20%;
+    width: 17%;
+    background-color: #f28a31;
+}
+
+.garagem{
+    margin-top: -26%;
+    margin-left: 62%;
+}
+.suites{
+    margin-top: -24%;
+    margin-left: 61%;
+}
+.form-quarto{
+    width: 106px;
+    height: 23px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border-color: rgb(255, 255, 255) ;
+}
+.form-suite{
+    width: 100px;
+    height: 23px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border-color: rgb(255, 255, 255) ;
+    padding-left: 30%;
+    margin-left: 60%;
+}
+.form-banheiro{
+    width: 100px;
+    height: 22px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border-color: rgb(255, 255, 255) ;
+    padding-left: 23%;
+    margin-top: -5%;
+}
+.form-garagem{
+    width: 100px;
+    height: 23px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border-color: rgb(255, 255, 255) ;
+    padding-left: 23%;
+    margin-left: 60%;
+    margin-top: 2%;
+
+}
+
 .botSaibaMais{
-    margin-top: 5%;
+    margin-top: 8%;
     background-color: #f28a31;
     color: white;
     padding: 20px;
     border: 2px solid #ffffff;
     transition: background-color 1s ease, color 1s ease;
-    border-radius: 7%;
-    height: 50px;
-    width: 50%;
-    padding-bottom: 10%;
-    padding-top: 4%;
+    border-radius: 10%;
+    height: 40px;
+    width: 33%;
+    padding-bottom: -20%;
+    padding-top: 2%;
+}
+.botSaibaMais1{
+    margin-top: 8%;
+    background-color: #f28a31;
+    color: white;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    transition: background-color 1s ease, color 1s ease;
+    border-radius: 10%;
+    height: 40px;
+    width: 33%;
+    padding-bottom: -20%;
+    padding-top: 2%;
+}
+.botSaibaMais2{
+    margin-top: 8%;
+    background-color: #f28a31;
+    color: white;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    transition: background-color 1s ease, color 1s ease;
+    border-radius: 10%;
+    height: 40px;
+    width: 33%;
+    padding-bottom: -20%;
+    padding-top: 2%;
+}
+.botSaibaMais3{
+    margin-top: 8%;
+    background-color: #f28a31;
+    color: white;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    transition: background-color 1s ease, color 1s ease;
+    border-radius: 10%;
+    height: 40px;
+    width: 33%;
+    padding-bottom: -20%;
+    padding-top: 2%;
+    margin-left: -43%;
 }
 .botSaibaMais:hover {
     font-family: "Open Sans" sans-serif;
@@ -237,6 +346,46 @@ const estado = ref('')
     width: 40px;
     height: 40px;
 }
+.qrt1 {
+    margin-left: -30%;
+    margin-top: -15%;
+
+}
+
+.m21 {
+    color: #f28a31;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 40;
+    width: 40px;
+    height: 40px;
+    margin-left: 22%;
+}
+
+.quarto1 {
+    color: #f28a31;
+    margin-right: 10px;
+    margin-top: -17%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 40;
+    width: 40px;
+    height: 40px;
+    margin-left: -43%;
+
+}
+
+.banheiro1 {
+    color: #f28a31;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 40;
+    width: 40px;
+    height: 40px;
+    margin-left: -43%;
+}
 
 
 .containerinfo {
@@ -246,17 +395,18 @@ const estado = ref('')
 }
 
 .bairro1 {
-
     font-size: 40px;
     font-weight: bold;
     color: #f28a31;
+    margin-top: -10%;
 }
 
 .bairro {
-    margin-top: 20%;
+    margin-top: 12%;
     font-size: 40px;
     font-weight: bold;
     color: #f28a31;
+    margin-left: -43%;
 }
 
 .info {
@@ -323,6 +473,11 @@ const estado = ref('')
     margin-bottom: 8px;
 }
 
+.rs1{
+    margin-top: 2px;
+    margin-bottom: 8px;
+    margin-left: -43%;
+}
 .containerimg {
     display: flex;
     flex-direction: column;
@@ -340,12 +495,6 @@ p {
     font-weight: bold;
 }
 
-.caixinha {
-    border-radius: 5px;
-    padding: 5px 130px;
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
 
 input {
     border-radius: 5px;
@@ -354,15 +503,6 @@ input {
     border-color: #ffffff;
 }
 
-.form {
-    border-radius: 2%;
-    margin-left: 200px;
-    margin-top: 50px;
-    padding: 20px;
-    height: 20%;
-    width: 25%;
-    background-color: #f28a31;
-}
 
 h2 {
     color: white;

@@ -114,6 +114,7 @@ function confirmacao() {
     border-radius: 4%;
     width: 20%;
     margin-top: -80%;
+    margin-left: 2%;
 }
 .botao:hover {
     font-family: "Open Sans" sans-serif;
@@ -202,7 +203,7 @@ h2 {
 
 .form {
   font-family: "Open Sans" sans-serif;
-  margin-top: -70%;
+  margin-top: -62%;
   margin-bottom: 80%;
   background-color: #f28a31;
   width: 20black%;
