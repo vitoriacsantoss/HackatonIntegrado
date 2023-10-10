@@ -60,10 +60,6 @@ function confirmacao() {
   </div>
 
 
-  <div class="botao">
-    <button @click="$router.push({ name: 'buscar' })">Voltar</button>
-  </div>
-
   <div class="form">
     <h2>ENTRAMOS EM CONTATO</h2>
     <div class="nome">
@@ -101,9 +97,29 @@ function confirmacao() {
     </div>
   </div>
 </div>
+
+<div>
+    <button class="botao" @click="$router.push({ name: 'buscar' })">Voltar</button>
+  </div>
+
 </template>
 
 <style scoped>
+.botao{
+  background-color: #f28a31;
+    color: black;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    transition: background-color 1s ease, color 1s ease;
+    border-radius: 4%;
+    width: 20%;
+    margin-top: -80%;
+}
+.botao:hover {
+    font-family: "Open Sans" sans-serif;
+    background-color:  #f28a3180;
+    color: black;
+}
 .contato{
   margin-top: 30px;
 }
@@ -170,7 +186,6 @@ function confirmacao() {
 }
 
 .carousel__slide {
-  
   padding: 10px;
 }
 
@@ -190,7 +205,7 @@ h2 {
   margin-top: -70%;
   margin-bottom: 80%;
   background-color: #f28a31;
-  width: 20%;
+  width: 20black%;
   border-radius: 02%;
   margin-left: 5%;
   width: 350px;

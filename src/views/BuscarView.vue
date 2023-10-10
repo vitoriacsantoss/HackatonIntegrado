@@ -103,7 +103,7 @@ const estado = ref('')
                     1 Banheiro
                 </div>
                 <div class="botao1"> 
-                    <button @click="$router.push({ name: 'saibamais01' })">Saiba Mais</button>
+                    <button class="botSaibaMais" @click="$router.push({ name: 'saibamais01' })">Saiba Mais</button>
                 </div>
             </div>
 
@@ -180,6 +180,25 @@ const estado = ref('')
 
 
 <style scoped>
+.botSaibaMais{
+    margin-top: 5%;
+    background-color: #f28a31;
+    color: white;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    transition: background-color 1s ease, color 1s ease;
+    border-radius: 7%;
+    height: 50px;
+    width: 50%;
+    padding-bottom: 10%;
+    padding-top: 4%;
+}
+.botSaibaMais:hover {
+    font-family: "Open Sans" sans-serif;
+    background-color:  #ffbe84;
+    color: black;
+}
+
 .qrt {
     margin-left: 50px;
     margin-top: -15%;
