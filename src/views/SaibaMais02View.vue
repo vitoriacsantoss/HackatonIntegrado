@@ -36,16 +36,7 @@ function confirmacao() {
         <img class="img1" src="https://arkpad.com.br/wp-content/uploads/2020/04/decoracao-de-quarto-93.jpg" alt=""> 
       </div>
     </Slide>
-    <Slide key="2">
-      <div class="carousel__item">
-        <img class="img1" src="https://cdn.awsli.com.br/2500x2500/1597/1597961/produto/125798320/63bba276c4.jpg" alt=""> 
-      </div>
-    </Slide>
-    <Slide key="3">
-      <div class="carousel__item">
-        <img class="img1" src="https://portal.loft.com.br/wp-content/uploads/2022/10/decoracao-lavabo-branco-espelho-pia-vaso-planta-seca-Quattrino.jpg" alt=""> 
-      </div>
-    </Slide>
+
     
     <template #addons>
       <!-- <Navigation /> -->

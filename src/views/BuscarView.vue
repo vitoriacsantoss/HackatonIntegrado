@@ -72,16 +72,16 @@ const estado = ref('')
 
 
         <div class="containerimg">
-            <div class="oi">
+            <div class="oi" @click="$router.push({ name: 'saibamais01' })">
                 <img class="img1" src="@/assets/imgs/APT.jpg" alt="">
             </div>
-            <div>
+            <div class="oi2" @click="$router.push({ name: 'saibamais02' })">
                 <img class="img2" src="@/assets/imgs/1.png" alt="">
             </div>
-            <div>
+            <div class="oi3" @click="$router.push({ name: 'saibamais03' })">
                 <img class="img3" src="@/assets/imgs/APT2.jpg" alt="">
             </div>
-            <div>
+            <div class="oi4" @click="$router.push({ name: 'saibamais04' })">
                 <img class="img4" src="@/assets/imgs/AP3.jpg" alt="">
             </div>
 
@@ -91,8 +91,8 @@ const estado = ref('')
 
 
         <div class="containerinfo">
-            <div class="info">
-                <div class="bairro1">Floresta | Joinville</div>
+            <div class="info" @click="$router.push({ name: 'saibamais01' })">
+                <div class="bairroF">Floresta | Joinville</div>
                 <div class="rs">R$390.000,00</div>
 
                 <div>
@@ -108,14 +108,14 @@ const estado = ref('')
                     <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
                     1 Banheiro
                 </div>
-                <div class="botao1"> 
+                <!-- <div class="botao1">
                     <button class="botSaibaMais" @click="$router.push({ name: 'saibamais01' })">Saiba Mais</button>
-                </div>
+                </div> -->
             </div>
 
 
-            <div class="info1">
-                <div class="bairro1">Bucarein | Joinville</div>
+            <div class="info1" @click="$router.push({ name: 'saibamais02' })">
+                <div class="bairroB">Bucarein | Joinville</div>
                 <div class="rs">R$340.000,00</div>
                 <div>
                     <img class="m2" src="@/assets/imgs/m2.png" alt="">
@@ -132,11 +132,11 @@ const estado = ref('')
                     <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
                     1 Banheiro
                 </div>
-                <div class="botao1"> 
+                <!-- <div class="botao1">
                     <button class="botSaibaMais1" @click="$router.push({ name: 'saibamais02' })">Saiba Mais</button>
-                </div>
+                </div> -->
             </div>
-            <div class="info2">
+            <div class="info2" @click="$router.push({ name: 'saibamais03' })">
                 <div class="bairro1">Profipo | Joinville</div>
                 <div class="rs">R$320.000,00</div>
                 <div>
@@ -154,39 +154,38 @@ const estado = ref('')
                     <img class="banheiro" src="@/assets/imgs/banheiro.png" alt="">
                     1 Banheiro
                 </div>
-                <div class="botao1"> 
+                <!-- <div class="botao1">
                     <button class="botSaibaMais2" @click="$router.push({ name: 'saibamais03' })">Saiba Mais</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-            <div class="info3">
-            <div class="bairro">Fátima | Joinville</div>
-            <div class="rs1">R$320.000,00</div>
-            <div>
-                <img class="m21" src="@/assets/imgs/m2.png" alt="">
-                76,00m²
-            </div>
-            <div>
-                <img class="quarto1" src="@/assets/imgs/quarto.png" alt="">
-                <div class="qrt1">
+    <div class="info3" @click="$router.push({ name: 'saibamais04' })">
+        <div class="bairro">Fátima | Joinville</div>
+        <div class="rs1">R$320.000,00</div>
+        <div>
+            <img class="m21" src="@/assets/imgs/m2.png" alt="">
+            76,00m²
+        </div>
+        <div>
+            <img class="quarto1" src="@/assets/imgs/quarto.png" alt="">
+            <div class="qrt1">
                 2 Quartos
             </div>
 
-            </div>
+        </div>
         <div>
             <img class="banheiro1" src="@/assets/imgs/banheiro.png" alt="">
             1 Banheiro
         </div>
-        <div class="botao1"> 
-             <button class="botSaibaMais3" @click="$router.push({ name: 'saibamais04' })">Saiba Mais </button>
-        </div>
+        <!-- <div class="botao1">
+            <button class="botSaibaMais3" @click="$router.push({ name: 'saibamais04' })">Saiba Mais </button>
+        </div> -->
     </div>
 </template>
 
 
 <style scoped>
-
 .caixinha {
     border-radius: 5px;
     background-color: #ffffff;
@@ -204,52 +203,57 @@ const estado = ref('')
     background-color: #f28a31;
 }
 
-.garagem{
+.garagem {
     margin-top: -26%;
     margin-left: 62%;
 }
-.suites{
+
+.suites {
     margin-top: -24%;
     margin-left: 61%;
 }
-.form-quarto{
+
+.form-quarto {
     width: 106px;
     height: 23px;
     border-radius: 5px;
     background-color: aliceblue;
-    border-color: rgb(255, 255, 255) ;
+    border-color: rgb(255, 255, 255);
 }
-.form-suite{
+
+.form-suite {
     width: 100px;
     height: 23px;
     border-radius: 5px;
     background-color: aliceblue;
-    border-color: rgb(255, 255, 255) ;
+    border-color: rgb(255, 255, 255);
     padding-left: 30%;
     margin-left: 60%;
 }
-.form-banheiro{
+
+.form-banheiro {
     width: 100px;
     height: 22px;
     border-radius: 5px;
     background-color: aliceblue;
-    border-color: rgb(255, 255, 255) ;
+    border-color: rgb(255, 255, 255);
     padding-left: 23%;
     margin-top: -5%;
 }
-.form-garagem{
+
+.form-garagem {
     width: 100px;
     height: 23px;
     border-radius: 5px;
     background-color: aliceblue;
-    border-color: rgb(255, 255, 255) ;
+    border-color: rgb(255, 255, 255);
     padding-left: 23%;
     margin-left: 60%;
     margin-top: 2%;
 
 }
 
-.botSaibaMais{
+.botSaibaMais {
     margin-top: 8%;
     background-color: #f28a31;
     color: white;
@@ -262,7 +266,8 @@ const estado = ref('')
     padding-bottom: -20%;
     padding-top: 2%;
 }
-.botSaibaMais1{
+
+.botSaibaMais1 {
     margin-top: 8%;
     background-color: #f28a31;
     color: white;
@@ -275,7 +280,8 @@ const estado = ref('')
     padding-bottom: -20%;
     padding-top: 2%;
 }
-.botSaibaMais2{
+
+.botSaibaMais2 {
     margin-top: 8%;
     background-color: #f28a31;
     color: white;
@@ -288,7 +294,8 @@ const estado = ref('')
     padding-bottom: -20%;
     padding-top: 2%;
 }
-.botSaibaMais3{
+
+.botSaibaMais3 {
     margin-top: 8%;
     background-color: #f28a31;
     color: white;
@@ -302,9 +309,10 @@ const estado = ref('')
     padding-top: 2%;
     margin-left: -43%;
 }
+
 .botSaibaMais:hover {
     font-family: "Open Sans" sans-serif;
-    background-color:  #ffbe84;
+    background-color: #ffbe84;
     color: black;
 }
 
@@ -346,6 +354,7 @@ const estado = ref('')
     width: 40px;
     height: 40px;
 }
+
 .qrt1 {
     margin-left: -30%;
     margin-top: -15%;
@@ -399,6 +408,34 @@ const estado = ref('')
     font-weight: bold;
     color: #f28a31;
     margin-top: -10%;
+
+}
+.bairroF {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f28a31;
+    margin-top: -10%;
+}
+
+.bairroB:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.bairroB {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f28a31;
+    margin-top: -10%;
+}
+
+.bairroF:hover {
+    color: black;
+    cursor: pointer;
+}
+.bairro1:hover {
+    color: black;
+    cursor: pointer;
 }
 
 .bairro {
@@ -407,6 +444,10 @@ const estado = ref('')
     font-weight: bold;
     color: #f28a31;
     margin-left: -43%;
+}
+.bairro:hover {
+    color: black;
+    cursor: pointer;
 }
 
 .info {
@@ -418,14 +459,14 @@ const estado = ref('')
 }
 
 .info1 {
-    margin-top: 48%;
+    margin-top: 62%;
     margin-left: 10%;
     font-size: large;
     width: 400px;
 }
 
 .info2 {
-    margin-top: 50%;
+    margin-top: 60%;
     margin-left: 10%;
     font-size: large;
     width: 400px;
@@ -444,9 +485,14 @@ const estado = ref('')
     width: 300px;
     margin-bottom: 20%;
     margin-left: 70px;
-    margin-top: 50px;
+    margin-top: 50px;    
 }
 
+.img1:hover {
+    background: rgba(0, 0, 0, 10);
+    /* transition: background 0.5s ease; */
+    cursor: pointer;
+}
 .img2 {
     height: 300px;
     width: 300px;
@@ -473,11 +519,12 @@ const estado = ref('')
     margin-bottom: 8px;
 }
 
-.rs1{
+.rs1 {
     margin-top: 2px;
     margin-bottom: 8px;
     margin-left: -43%;
 }
+
 .containerimg {
     display: flex;
     flex-direction: column;
@@ -541,5 +588,4 @@ h2 {
 
 h1 {
     color: white;
-}
-</style>
+}</style>
