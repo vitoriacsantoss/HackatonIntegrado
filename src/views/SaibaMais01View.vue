@@ -25,6 +25,7 @@ function confirmacao() {
 <template>
   <hr>
   <div class="tudo">
+    <div class="inicio">
     <div class="titulo">
       <h3>Cód.: 610 - Apartamento à venda, no Floresta | Joinville</h3>
     </div>
@@ -33,7 +34,10 @@ function confirmacao() {
       <img src="@/assets/imgs/simb.png" alt="">
       <p class="p" >Rua: Ibirapuera 353</p>
     </div>
-    <div class="preco">R$296.000,000</div>
+  </div>
+    
+    <div class="preco">R$296.000,000
+    </div>
 
     <div class="carousel">
       <Carousel>
@@ -114,11 +118,10 @@ function confirmacao() {
     
     <div class="mapa">
       <h1 class="tituloLoc">Localização:</h1>
-      <iframe width="1170" height="500" id="gmap_canvas"
+      <iframe width="600" height="500" id="gmap_canvas"
         src="https://maps.google.com/maps?q=rua+ibirapuera+floresta&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
         scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </div>
-
 
     <div class="form">
       <h2>ENTRAMOS EM CONTATO</h2>
@@ -165,10 +168,29 @@ function confirmacao() {
 </template>
 
 <style scoped>
+.inicio{
+  margin-right: 20%;
+}
+.carousel__item {
+  width: 600px;
+  height: 450px;
+  background-color: var(--vc-clr-primary);
+  color: var(--vc-clr-white);
+  font-size: 20px;
+  /* border-radius: 8px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
 .preco{
   font-size: 25px;
   color: #f28a31;
   font-weight: bold;
+  margin-top: -13%;
+  margin-left: 45%;
+  margin-bottom: -1%;
 }
 .p{
   margin-left: 13%;
@@ -176,7 +198,7 @@ function confirmacao() {
 }
 .form {
   font-family: "Open Sans" sans-serif;
-  margin-top: -70%;
+  margin-top: -75%;
   margin-bottom: 80%;
   background-color: #f28a31;
   width: 20black%;
@@ -210,6 +232,9 @@ function confirmacao() {
     margin-top: -1%;
   }
 .botao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f28a31;
   color: black;
   padding: 20px;
@@ -217,27 +242,28 @@ function confirmacao() {
   transition: background-color 1s ease, color 1s ease;
   border-radius: 4%;
   width: 20%;
-  margin-top: -80%;
-  margin-left: 2%;
+  height: 20%;
+  margin-top: -58%;
+  margin-left: 63%;
 }
 
 .botao:hover {
   font-family: "Open Sans" sans-serif;
   background-color: #f28a3180;
   color: black;
-}
+} 
 
 .contato {
   margin-top: 30px;
 }
 
 .tituloLoc {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   font-family: "Open Sans" sans-serif;
 }
 
 .mapa {
-  margin-left: 21%;
+  margin-left: 17%;
   margin-top: 5%;
 }
 
@@ -284,19 +310,6 @@ function confirmacao() {
 .img1 {
   width: 600px;
   height: 450px;
-}
-
-.carousel__item {
-  width: 600px;
-  height: 450px;
-  background-color: var(--vc-clr-primary);
-  color: var(--vc-clr-white);
-  font-size: 20px;
-  /* border-radius: 8px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
 }
 
 .carousel__slide {
