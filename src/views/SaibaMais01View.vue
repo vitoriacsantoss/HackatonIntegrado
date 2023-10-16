@@ -29,11 +29,13 @@ function confirmacao() {
       <h3>Cód.: 610 - Apartamento à venda, no Floresta | Joinville</h3>
     </div>
       <br>
-      <div class="simbolo">
+    <div class="simbolo">
       <img src="@/assets/imgs/simb.png" alt="">
+      <p class="p" >Rua: Ibirapuera 353</p>
     </div>
-      <p>Rua: Ibirapuera 353</p>
-    </div>
+    <div class="preco">R$296.000,000</div>
+
+    <div class="carousel">
       <Carousel>
         <Slide key="1">
           <div class="carousel__item">
@@ -109,6 +111,7 @@ function confirmacao() {
         </template>
       </Carousel>
     </div>
+    
     <div class="mapa">
       <h1 class="tituloLoc">Localização:</h1>
       <iframe width="1170" height="500" id="gmap_canvas"
@@ -137,6 +140,7 @@ function confirmacao() {
           placeholder="Olá, tenho interesse neste imóvel, Apartameto à venda, 2 quartos, Jardim da Barra - Itapoá/SC, código 610. Aguardo breve o contato. Obrigado!">
       </textarea>
       </div>
+      <button class="enviar">ENVIAR</button>
       <div class="ligue">
         <h1 class="ligueAgora">LIGUE AGORA!</h1>
         <div class="contato">
@@ -153,18 +157,58 @@ function confirmacao() {
         </div>
       </div>
     </div>
-  </div>
 
-  <div>
-    <button class="botao" @click="$router.push({ name: 'buscar' })">Voltar</button>
+    <div>
+      <button class="botao" @click="$router.push({ name: 'buscar' })">Voltar</button>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.simbolo{
-  height: 200px;
-  width: 200px;
+.preco{
+  font-size: 25px;
+  color: #f28a31;
+  font-weight: bold;
 }
+.p{
+  margin-left: 13%;
+  margin-top: -13%;
+}
+.form {
+  font-family: "Open Sans" sans-serif;
+  margin-top: -70%;
+  margin-bottom: 80%;
+  background-color: #f28a31;
+  width: 20black%;
+  border-radius: 02%;
+  margin-left: 5%;
+  width: 350px;
+  height: 397px;
+  padding: 20px 10px 10px 10px;
+  margin-left: 63%;
+}
+
+.enviar{
+  background-color: white;
+  color: black;
+  border: #f28a31;
+  border-radius: 2px;
+  width: 90%;
+  height: 15%;
+  margin-left: 5%;
+  margin-top: 8%;
+}
+.carousel{
+  margin-right: 210px;
+  margin-top: -7%;
+}
+
+.simbolo{
+    height: 200px;
+    width: 200px;
+    margin-left: 21%;
+    margin-top: -1%;
+  }
 .botao {
   background-color: #f28a31;
   color: black;
@@ -219,7 +263,7 @@ function confirmacao() {
 
 .ligue {
   font-size: 13px;
-  margin-top: 18%;
+  margin-top: 30%;
 }
 
 .titulo {
@@ -236,11 +280,6 @@ function confirmacao() {
   margin-top: 03%;
 }
 
-.carrosel {
-  margin-top: 2%;
-  margin-left: -25%;
-
-}
 
 .img1 {
   width: 600px;
@@ -264,7 +303,6 @@ function confirmacao() {
   padding: 10px;
 }
 
-.carousel__prev,
 .carousel__next {
   box-sizing: content-box;
   border: 5px solid white;
@@ -276,21 +314,7 @@ h2 {
   color: white;
 }
 
-.form {
-  font-family: "Open Sans" sans-serif;
-  margin-top: -62%;
-  margin-bottom: 80%;
-  background-color: #f28a31;
-  width: 20black%;
-  border-radius: 02%;
-  margin-left: 5%;
-  width: 350px;
-  height: 350px;
-  padding: 20px 10px 10px 10px;
-  margin-left: 65%;
-}
-
-textarea {
+.textarea {
   font-size: 90%;
   resize: none;
   width: 280px;
