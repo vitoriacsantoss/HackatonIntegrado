@@ -27,12 +27,12 @@ function confirmacao() {
   <div class="tudo">
     <div class="inicio">
     <div class="titulo">
-      <h3>Cód.: 610 - Apartamento à venda, no Floresta | Joinville</h3>
+      <h3>Cód.: 171 - Apartamento à venda, no América | Joinville</h3>
     </div>
       <br>
     <div class="simbolo">
       <img src="@/assets/imgs/simb.png" alt="">
-      <p class="p" >Rua: Ibirapuera 353</p>
+      <p class="p" >Rua: Duvoisin 121</p>
     </div>
   </div>
     
@@ -43,68 +43,54 @@ function confirmacao() {
       <Carousel>
         <Slide key="1">
           <div class="carousel__item">
-            <img class="img1" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/a4k1z-3cbc20d9-c893-48c9-9fca-ba2131b5e1bb-1695236336.jpeg" alt="">
+            <img class="img1" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/366/3273d1f4-0a4b-4acb-bd8c-098520392b09.jpg" alt="">
           </div>
         </Slide>
         <Slide key="2">
           <div class="carousel__item">
-            <img class="img1" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/us4p9-74ad4799-aaae-4700-8699-d176bcd53393-1695236336.jpeg"
+            <img class="img1" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/366/ad96144b-f948-4c1b-b455-6ed2817afeb8.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="3">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/hvl0g-d6b1fcba-fd99-4105-9244-ac81e9aabe3f-1695236336.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/366/1b83047d-1c9e-4a84-bc54-cd8e51bc48e0.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="4">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/xff89g-b35e9a94-eace-4b1b-95d4-41eb305a9113-1695236336.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/366/a60aa5ae-1f6f-4594-8149-b53500f1c669.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="5">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/1adfa-942371d6-92b7-4c88-96c1-febf46ca659d-1695236336.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/366/74870924-d412-47aa-b3c9-9ddebf12463b.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="6">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/r9r75-d0d68789-e173-4d9b-bbc2-c1b7da576203-1695236337.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/366/29978148-c031-4b0f-9a97-ee198cafc38d.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="7">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/gmy6p-9e7f1dae-eccf-4a66-83a2-c3d49eb0e538-1695236337.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/366/26ef373e-9a20-4c16-8329-3842d5d54b7f.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="7">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/mlami-c6bdee22-22bf-4839-9df1-e22a35daa75c-1695236337.jpeg"
-              alt="">
-          </div>
-        </Slide>
-        <Slide key="8">
-          <div class="carousel__item">
-            <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/vk8zw-2ccff974-c72d-4d83-9f32-cefcdc73ddb6-1695236337.jpeg"
-              alt="">
-          </div>
-        </Slide>
-        <Slide key="8">
-          <div class="carousel__item">
-            <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/ofi9v-dee29d2c-7079-45d9-822d-1f76d3cda3f4-1695236337.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/366/9d2db6b0-6271-441b-b801-93bc518547dc.jpg"
               alt="">
           </div>
         </Slide>
@@ -118,10 +104,9 @@ function confirmacao() {
     
     <div class="mapa">
       <h1 class="tituloLoc">Localização:</h1>
-      <iframe width="600" height="500" id="gmap_canvas"
-        src="https://maps.google.com/maps?q=rua+ibirapuera+floresta&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-        scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=121+duvoisin%2C+america%2C+joinville&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </div>
+   
 
     <div class="form">
       <h2>ENTRAMOS EM CONTATO</h2>

@@ -73,16 +73,16 @@ const estado = ref('')
 
         <div class="containerimg">
             <div class="oi" @click="$router.push({ name: 'saibamais01' })">
-                <img class="img1" src="@/assets/imgs/APT.jpg" alt="">
+                <img class="img1" src="@/assets/imgs/casa1.jpg" alt="">
             </div>
             <div class="oi2" @click="$router.push({ name: 'saibamais02' })">
-                <img class="img2" src="@/assets/imgs/1.png" alt="">
+                <img class="img2" src="@/assets/imgs/casa2.jpg" alt="">
             </div>
             <div class="oi3" @click="$router.push({ name: 'saibamais03' })">
-                <img class="img3" src="@/assets/imgs/APT2.jpg" alt="">
+                <img class="img3" src="@/assets/imgs/casa3.jpg" alt="">
             </div>
             <div class="oi4" @click="$router.push({ name: 'saibamais04' })">
-                <img class="img4" src="@/assets/imgs/AP3.jpg" alt="">
+                <img class="img4" src="@/assets/imgs/casa4.jpg" alt="">
             </div>
 
         </div>
@@ -137,7 +137,7 @@ const estado = ref('')
                 </div> -->
             </div>
             <div class="info2" @click="$router.push({ name: 'saibamais03' })">
-                <div class="bairro1">Profipo | Joinville</div>
+                <div class="bairro1">América | Joinville</div>
                 <div class="rs">R$320.000,00</div>
                 <div>
                     <img class="m2" src="@/assets/imgs/m2.png" alt="">
@@ -158,10 +158,8 @@ const estado = ref('')
                     <button class="botSaibaMais2" @click="$router.push({ name: 'saibamais03' })">Saiba Mais</button>
                 </div> -->
             </div>
-        </div>
-    </div>
     <div class="info3" @click="$router.push({ name: 'saibamais04' })">
-        <div class="bairro">Fátima | Joinville</div>
+        <div class="bairro">Glória | Joinville</div>
         <div class="rs1">R$320.000,00</div>
         <div>
             <img class="m21" src="@/assets/imgs/m2.png" alt="">
@@ -178,6 +176,8 @@ const estado = ref('')
             <img class="banheiro1" src="@/assets/imgs/banheiro.png" alt="">
             1 Banheiro
         </div>
+    </div>
+    </div>
         <!-- <div class="botao1">
             <button class="botSaibaMais3" @click="$router.push({ name: 'saibamais04' })">Saiba Mais </button>
         </div> -->
@@ -199,7 +199,7 @@ const estado = ref('')
     margin-top: 50px;
     padding: 20px;
     height: 20%;
-    width: 17%;
+    width: 20%;
     background-color: #f28a31;
 }
 
@@ -401,6 +401,7 @@ const estado = ref('')
     display: flex;
     flex-direction: column;
     margin-left: 2%;
+    margin-top: 2%;
 }
 
 .bairro1 {
@@ -473,11 +474,10 @@ const estado = ref('')
 }
 
 .info3 {
-    margin-top: -35%;
-    margin-left: 61%;
+    margin-top: 35%;
+    margin-left: 52%;
     font-size: large;
     width: 400px;
-    margin-bottom: 8%;
 }
 
 .img1 {
@@ -534,6 +534,7 @@ const estado = ref('')
 .principal {
     display: flex;
     flex-direction: row;
+    margin-bottom: -13%;
 }
 
 p {

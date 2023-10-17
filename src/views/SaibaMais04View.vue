@@ -27,12 +27,12 @@ function confirmacao() {
   <div class="tudo">
     <div class="inicio">
     <div class="titulo">
-      <h3>Cód.: 610 - Apartamento à venda, no Floresta | Joinville</h3>
+      <h3>Cód.: 610 - Apartamento à venda, no Glória | Joinville</h3>
     </div>
       <br>
     <div class="simbolo">
       <img src="@/assets/imgs/simb.png" alt="">
-      <p class="p" >Rua: Ibirapuera 353</p>
+      <p class="p" >Rua: Agrolândia 444</p>
     </div>
   </div>
     
@@ -43,68 +43,152 @@ function confirmacao() {
       <Carousel>
         <Slide key="1">
           <div class="carousel__item">
-            <img class="img1" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/a4k1z-3cbc20d9-c893-48c9-9fca-ba2131b5e1bb-1695236336.jpeg" alt="">
+            <img class="img1" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/pp-03.jpg" alt="">
           </div>
         </Slide>
         <Slide key="2">
           <div class="carousel__item">
-            <img class="img1" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/us4p9-74ad4799-aaae-4700-8699-d176bcd53393-1695236336.jpeg"
+            <img class="img1" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/ca893663-3ab4-4866-badb-fa14ef922b4b.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="3">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/hvl0g-d6b1fcba-fd99-4105-9244-ac81e9aabe3f-1695236336.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/db5fdb7d-3d5f-4592-8012-250663e8cdfa.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="4">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/xff89g-b35e9a94-eace-4b1b-95d4-41eb305a9113-1695236336.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/45478a69-d718-42fe-9967-eae2bc4a5b14.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="5">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/1adfa-942371d6-92b7-4c88-96c1-febf46ca659d-1695236336.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/de2c3a83-b4cd-40b9-8dee-3c0f18fc9bc7.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="6">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/r9r75-d0d68789-e173-4d9b-bbc2-c1b7da576203-1695236337.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/cf137f07-42d0-4028-8f4d-07def8e92c1a.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="7">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/gmy6p-9e7f1dae-eccf-4a66-83a2-c3d49eb0e538-1695236337.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/f5d7625e-b7b8-4b20-a1e0-ffb6f8be96db.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="7">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/mlami-c6bdee22-22bf-4839-9df1-e22a35daa75c-1695236337.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/0c598ea1-a1ce-43d0-84e3-981839a9aee9.jpg"
               alt="">
           </div>
         </Slide>
         <Slide key="8">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/vk8zw-2ccff974-c72d-4d83-9f32-cefcdc73ddb6-1695236337.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/4f9c4f1a-d1dc-4000-a683-35b174aa5913.jpg"
               alt="">
           </div>
         </Slide>
-        <Slide key="8">
+        <Slide key="9">
           <div class="carousel__item">
             <img class="img1"
-              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/ofi9v-dee29d2c-7079-45d9-822d-1f76d3cda3f4-1695236337.jpeg"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/cf063079-1a5d-4211-be70-9d918617f41c.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="10">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/f9007339-6d2e-462c-ad18-c8abd9e291e4.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="11">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/e2cdfa60-78be-4010-9e7a-24dd8ccbbfe3.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="12">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/1fed225b-6b8e-46cd-99ff-90f17d193340.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="13">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/4a6a3025-5a61-4b73-9448-3f1d625792f5.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="14">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/3e70f6b4-2725-4758-8ad5-547930f7b250.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="15">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/717d5016-f441-441c-9401-67fce615d9d2.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="16">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/cc7dd520-b465-4781-92f6-95abfde58144.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="17">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/86ef4e96-41b4-49f1-b125-499827f15098.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="18">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/4198df5e-668a-4755-911f-e410db12846e.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="19">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/153564d7-e70e-4b1f-a7c5-474d8613bca6.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="20">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/9ff304f4-748e-44f3-8abd-e57d367f52f5.jpg"
+              alt="">
+          </div>
+        </Slide>
+        <Slide key="21">
+          <div class="carousel__item">
+            <img class="img1"
+              src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/4eb4c3a6-0417-484f-a447-c69769ac5e0f.jpg"
               alt="">
           </div>
         </Slide>
@@ -118,9 +202,7 @@ function confirmacao() {
     
     <div class="mapa">
       <h1 class="tituloLoc">Localização:</h1>
-      <iframe width="600" height="500" id="gmap_canvas"
-        src="https://maps.google.com/maps?q=rua+ibirapuera+floresta&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-        scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=444+agrol%C3%A2ndia%2C+gloria%2C+joinville&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </div>
 
     <div class="form">
