@@ -9,9 +9,9 @@ import MButton from '@/components/MButton.vue'
         <h1>DESTAQUES</h1>
     </div>
     <div class="cointainerdstq">
-        <img class="img1" @click="$router.push({ name: 'saibamais04' })" src="@/assets/imgs/casona.jpg" alt="">
-        <img class="img2" @click="$router.push({ name: 'saibamais01' })" src="@/assets/imgs/1.jpg" alt="">
-        <img class="img3" @click="$router.push({ name: 'saibamais03' })" src="@/assets/imgs/casinha.jpg" alt="">
+        <img class="img1" @click="$router.push({ name: 'saibamais04' })" src= "https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/pp-03.jpg" alt="">
+        <img class="img2" @click="$router.push({ name: 'saibamais01' })" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/a4k1z-3cbc20d9-c893-48c9-9fca-ba2131b5e1bb-1695236336.jpeg" alt="">
+        <img class="img3" @click="$router.push({ name: 'saibamais03' })" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/366/3273d1f4-0a4b-4acb-bd8c-098520392b09.jpg"  alt="">
     </div>
 
     <div class="containerinfo">

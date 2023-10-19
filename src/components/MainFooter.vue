@@ -128,12 +128,13 @@ input {
     flex-direction: column;
     align-items: center;
     margin-left: 0%;
-    border: 1px solid#ccc;
-    font-size: 20px;
+    border: 1px;
+    font-size: 16px;
     background-color: #f28a31;
     margin-top: 20%;
     letter-spacing: 1px;
     justify-content: center;
+    font-family: "Open Sans" sans-serif;
 }
 
 .routerBusca {

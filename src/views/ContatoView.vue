@@ -104,12 +104,15 @@ function confirmacao() {
         </div>
     </div>
         <div v-if="enviar" class="baixo">
-            <p> Sua mensagem foi enviada, aguarde seu retorno!</p>
+            <p> SUA MENSAGEM FOI ENVIADA, AGUARDE SEU RETORNO!</p>
         </div>
 
 </template>
 
 <style scoped>
+.centro {
+    margin-top: -18%;
+}
 
 .form {
     height: 650px;
@@ -118,7 +121,7 @@ function confirmacao() {
     /* border: 1px solid #ccc; */
     /* background-color: #848486; */
     width: 85vh;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Open Sans" sans-serif;
     transform: scale(0.8);
     font-size: 22px;
     margin-top: 4%;
@@ -148,26 +151,28 @@ textarea {
 }
 
 .baixo {
-    padding-left: 10%;
+    margin-left: 15%;
+    margin-top: -5%;
     flex-direction: row;
     font-size: medium;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Open Sans" sans-serif;
     justify-content: center;
     border: 5px;
     display: flex;
+     font-weight: bold;
 
 }
 
 .comp {
     color: white;
-    height: 50px;
-    width: 100px;
+    height: 40px;
+    width: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 47%;
-    border: 1px solid#ccc;
-    font-size: 1.5rem;
+    border: 1px;
+    font-size: 21px;
     background-color: #f28a31;
     margin-top: 20%;
 }
@@ -176,10 +181,12 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    margin-top: 8%;
     /* margin-bottom: 10%; */
 }
 
 .email {
+    margin-right: -8%;
     margin-top: -6%;
     display: flex;
     flex-direction: column;
@@ -187,13 +194,16 @@ textarea {
 }
 
 .telefoneCL {
+    margin-top: -3%;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     /* margin-bottom: 20%; */
 }
 
+
 .telefoneFX {
+    margin-right: -8%;
     margin-top: -6%;
     display: flex;
     flex-direction: column;
@@ -217,6 +227,7 @@ h2 {
 }
 
 .row {
+    
     margin-right: -15px;
     margin-left: -15px;
 }
