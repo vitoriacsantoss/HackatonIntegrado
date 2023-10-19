@@ -108,6 +108,7 @@ const estado = ref('')
 
 
 .caixinha1 {
+  /* font-weight: bold; */
   padding: 0 70px;
   width: 40%;
   margin-left: 16px;
@@ -115,7 +116,7 @@ const estado = ref('')
   height: 38px;
   line-height: 38px;
   font-family: sans-serif;
-  color: #999999;
+  color: white;
   font-size: 15px;
   background: #01081d80;
   /* margin-top: 10%; */
@@ -133,7 +134,7 @@ const estado = ref('')
   /* justify-content: center; */
   align-items: center;
   padding: 30px;
-
+  /* font-weight: bold; */
   border-top: 7px solid #f28a31;
   background-color: #0f0f4180;
   height: 400px;

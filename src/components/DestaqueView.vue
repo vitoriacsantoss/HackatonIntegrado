@@ -9,23 +9,23 @@ import MButton from '@/components/MButton.vue'
         <h1>DESTAQUES</h1>
     </div>
     <div class="cointainerdstq">
-        <img class="img1" src="@/assets/imgs/casona.jpg" alt="">
-        <img class="img2" src="@/assets/imgs/1.jpg" alt="">
-        <img class="img3" src="@/assets/imgs/casinha.jpg" alt="">
+        <img class="img1" @click="$router.push({ name: 'saibamais04' })" src="@/assets/imgs/casona.jpg" alt="">
+        <img class="img2" @click="$router.push({ name: 'saibamais01' })" src="@/assets/imgs/1.jpg" alt="">
+        <img class="img3" @click="$router.push({ name: 'saibamais03' })" src="@/assets/imgs/casinha.jpg" alt="">
     </div>
 
     <div class="containerinfo">
-        <div class="info">
+        <div class="info" @click="$router.push({ name: 'saibamais04' })">
             <div class="bairro">Glória | Joinville</div>
             <div class="rs">R$390.000,00</div>
             <div class="m2">50,90m²</div>
         </div>
-        <div class="info2">
-            <div class="bairro">Fátima | Joinville</div>
+        <div class="info2" @click="$router.push({ name: 'saibamais01' })">
+            <div class="bairro">Floresta | Joinville</div>
             <div class="rs">R$340.000,00</div>
             <div class="m2">68,88m²</div>
         </div>
-        <div class="info3">
+        <div class="info3" @click="$router.push({ name: 'saibamais03' })">
             <div class="bairro">América | Joinville</div>
             <div class="rs">R$320.000,00</div>
             <div class="m2">76,00m²</div>
@@ -59,15 +59,21 @@ import MButton from '@/components/MButton.vue'
     font-size: large;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
-
+.bairro:hover{
+    color: black;
+    cursor: pointer;
+}
 .info2 {
     font-size: large;
     display: flex;
     flex-direction: column;
     margin-top: 215%;
+    cursor: pointer;
     margin-left: 28%;
 }
+
 
 .info3 {
     font-size: large;
@@ -103,6 +109,12 @@ h1 {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    
+}
+.img1:hover {
+    background: rgba(0, 0, 0, 10);
+    /* transition: background 0.5s ease; */
+    cursor: pointer;
 }
 
 .img2 {
@@ -114,6 +126,11 @@ h1 {
     display: flex;
     flex-direction: column;
 }
+.img2:hover {
+    background: rgba(0, 0, 0, 10);
+    /* transition: background 0.5s ease; */
+    cursor: pointer;
+}
 
 .img3 {
     height: 300px;
@@ -123,6 +140,11 @@ h1 {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+}
+.img3:hover {
+    background: rgba(0, 0, 0, 10);
+    /* transition: background 0.5s ease; */
+    cursor: pointer;
 }
 
 .titu {
