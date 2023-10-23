@@ -27,7 +27,7 @@ function confirmacao() {
   <div class="tudo">
     <div class="inicio">
     <div class="titulo">
-      <h3>Cód.: 610 - Apartamento à venda, no Floresta | Joinville </h3>
+      <h3>Cód.: 610 - Apartamento à venda, no Floresta coco | Joinville </h3>
     </div>
       <br>
     <div class="simbolo">
