@@ -7,6 +7,7 @@ import SaibaMais01View from '@/views/SaibaMais01View.vue'
 import SaibaMais02View from '@/views/SaibaMais02View.vue'
 import SaibaMais03View from '@/views/SaibaMais03View.vue'
 import SaibaMais04View from '@/views/SaibaMais04View.vue'
+import TestView from '@/views/TestView.vue'
 
 
 const router = createRouter({
@@ -46,6 +47,11 @@ const router = createRouter({
             path: '/saibamais04',
             name: 'saibamais04',
             component: SaibaMais04View
+        },
+                {
+            path: '/test',
+            name: 'test',
+            component: TestView
         },
     ]
 }) 
