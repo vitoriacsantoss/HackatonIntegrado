@@ -11,7 +11,7 @@ import MButton from '@/components/MButton.vue'
     <div class="cointainerdstq">
         <img class="img1" @click="$router.push({ name: 'saibamais04' })" src= "https://s3.imoview.com.br/rafaelfonseca/Imoveis/454/pp-03.jpg" alt="">
         <img class="img2" @click="$router.push({ name: 'saibamais01' })" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/610/a4k1z-3cbc20d9-c893-48c9-9fca-ba2131b5e1bb-1695236336.jpeg" alt="">
-        <img class="img3" @click="$router.push({ name: 'saibamais03' })" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/366/3273d1f4-0a4b-4acb-bd8c-098520392b09.jpg"  alt="">
+        <img class="img3" @click="$router.push({ name: 'saibamais02' })" src="https://s3.imoview.com.br/rafaelfonseca/Imoveis/284/fachada-01.png"  alt="">
     </div>
 
     <div class="containerinfo">
@@ -25,7 +25,7 @@ import MButton from '@/components/MButton.vue'
             <div class="rs">R$340.000,00</div>
             <div class="m2">68,88m²</div>
         </div>
-        <div class="info3" @click="$router.push({ name: 'saibamais03' })">
+        <div class="info3" @click="$router.push({ name: 'saibamais02' })">
             <div class="bairro">América | Joinville</div>
             <div class="rs">R$320.000,00</div>
             <div class="m2">76,00m²</div>
